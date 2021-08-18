@@ -1,0 +1,105 @@
+터미널
+맥북 iTerm2 
+
+https://git-scm.com/download/win> 깃 다운로드
+https://www.sourcetreeapp.com/ > 소스트리 다운로드
+
+//기본 CMD 명령어
+CD 디렉토리 입장
+RD 디렉토리 제거
+MD 디렉토리 만들기
+DEL 파일제거
+DIR 디렉토리 목록
+EXIT cmd종료
+
+
+//깃 버전
+git --version 
+
+//깃 설정 리스트
+git config --list 
+git config --global -e 
+
+//이름설정
+git config --global user.name "ingHome" 
+
+//이메일 설정
+git config --global use.email "lovebites444@gmail.com
+
+//맥과 윈도우 공백제거후 업로드
+git config --global core.autocrlf true   // win
+git config --global core.autocrlf input // mac
+
+mkdir 폴더명 > 폴더생성
+cd 폴더명 > 폴더 진입
+
+//깃사용
+git init
+
+//깃 상태
+git status 
+
+//깃 라이프스타일
+작업 >add> 스태이징 >commit> git repositories >push > 서버
+서버 > push >git repositories >checkout > 작업 
+
+//파일생성
+echo hello world! > a.txt
+※ cmd 에서 방향키 위를 누르면 전 명렁어를 쓸수있다
+
+//커밋준비
+git add a.txt
+※ git add .  // 모든파일   *.html // html만
+
+//스테이지에서 내리기(커밋준비 취소)
+git rm --cached *
+※ * or . < 모든파일
+
+// 변경사항 확인
+git diff
+// 변경사항 확인(스테이지)
+git diff --staged
+//git diff
+
+//git diff를 vscode에서 보기
+Command line 에서 code --help 가 동작하는지 확인합니다.
+동작하지 않으면, 맥 환경에서는 VS Code 의 Command Palette(⇧⌘P)에서 Shell Command: Install ‘code’ command in PATH를 선택합니다. 
+윈도우즈의 경우 VS Code 인스톨 시 “Add to PATH”를 선택해야 합니다.
+CMD 에서 다음을 입력합니다.
+git config --global core.editor "code --wait"
+
+VS Code Command Palette 에서 Shell Command: Install ‘code’ command in PATH 선택
+이제 다음과 같이 입력하면 VS Code를 Git config 에디터로 사용할 수 있습니다.
+git config --global -e
+Git configuration
+위의 명령어를 입력하거나, ~/.gitcofig 파일을 에디터를 이용하여 직접 엽니다. 그리고 아래와 같은 설정을 추가해 줍니다.
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+--wait 옵션은 Command line으로 VS Code를 실행시켰을 경우 VS Code 인스턴스를 닫을 때 까지 command를 대기 시킵니다. Command line으로 실행한 VS Code의 window를 닫으면 command가 다시 활성화 됩니다. 
+VS Code를 Git 외부 편집기로 사용할때 편합니다. --diff 옵션을 사용하여 두 파일을 비교합니다.
+
+// 비주얼 스튜디오에서 변경 파일 보기
+git difftool
+
+//git 허브와 연결
+git remote add origin https://github.com/uinq/m4a-vue.git
+
+//원격저장소에 push
+git push origin master
+
+//원격저장소에서 내려받기(init전)
+git clone https://github.com/uinq/m4a-vue.git .  < .주의
+
+//원격저장소에서 pull
+git pull origin master
+
+
+
+
+
+
+
+
+
