@@ -1,0 +1,7 @@
+#skipNav{position:absolute;top:0;left:0;width:100%;}
+#skipNav a{position:relative;display:block;opacity:0;text-align:center;font-weight:bold;color:#fff;background:rgba(0,0,0,0.4);height:0;transition:all .4s;}
+#skipNav a:focus{opacity:1;z-index:1000;padding:10px 0px;height:auto;}
+#skipNav a:hover{text-decoration:underline;}
+
+body{font-size:$base-font-size;height:$base-height;color:$base-color;}
+

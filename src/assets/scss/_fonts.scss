@@ -1,0 +1,43 @@
+@font-face {
+font-family:Roboto;
+font-weight:100;
+src:local(※), url(/fonts/Roboto-Regular.woff) format('woff');
+}
+@font-face {
+font-family:Roboto;
+font-weight:400;
+src:local(※), url(/fonts/Roboto-Medium.woff) format('woff');
+}
+@font-face {
+font-family:Roboto;
+font-weight:700;
+src:local(※), url(/fonts/Roboto-Bold.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquareRound';
+font-weight:100;
+src:
+        url(/fonts//NanumSquareRoundL.woff2) format('woff2'),
+        url(/fonts/d/NanumSquareRoundL.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquareRound';
+font-weight:400;
+src:
+        url(/fonts//NanumSquareRoundR.woff2) format('woff2'),
+        url(/fonts/d/NanumSquareRoundR.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquareRound';
+font-weight:700;
+src:
+        url(/fonts//NanumSquareRoundB.woff2) format('woff2'),
+        url(/fonts/d/NanumSquareRoundB.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquareRound';
+font-weight:900;
+src:
+        url(/fonts//NanumSquareRoundEB.woff2) format('woff2'),
+        url(/fonts/d/NanumSquareRoundEB.woff) format('woff');
+}
