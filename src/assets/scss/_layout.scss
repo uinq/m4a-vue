@@ -5,3 +5,16 @@
 
 body{font-size:$base-font-size;height:$base-height;color:$base-color;}
 
+//header
+#header #logo{width:80px;height:25px;position:absolute;left:180px;top:100px;}
+#header #logo > a{display:block;height:100%;width:100%;background:url($base-url+'/logo.png') 0 0 no-repeat;background-size:100% auto;overflow:hidden;color:transparent;font-size:6px;}
+//footer
+#footer address{position:absolute;left:100px;bottom:90px;font-size:1.2rem}
+#footer .sales-inquiry{position:absolute;right:100px;top:100px;font-size:14px;text-align:right;font-weight:bold;}
+#footer .sales-inquiry .btn-copy{padding: 0 12px;height: 20px;line-height: 20px;border-radius: 9px;background-color: #000;font-size: 11px;color: #fff;font-weight: bold;position:absolute;right:10px;top:0;}
+#footer .sales-inquiry .tit{position:absolute;left:10px;top:0;font-weight:900;}
+#footer .sales-inquiry .email{padding-left:90px;padding-right:80px;padding-bottom:8px;display:block;position:relative;}
+#footer .sales-inquiry .tel{position:relative;display:inline-block;padding:0px 10px 8px;margin-top:22px;}
+#footer .sales-inquiry .tel:after,
+#footer .sales-inquiry .email:after{content:'';height:1px;background:#000;position:absolute;bottom:0;width:100%;right:0;}
+

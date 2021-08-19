@@ -13,6 +13,10 @@ select {-webkit-appearance: none;-moz-appearance: none;appearance: none;border:0
 select::-ms-expand { display: none; }
 caption{display:none;}
 *{-webkit-font-smoothing: antialiased;}
+button{cursor:pointer;}
+
+/* global */
+.hidden{overflow:hidden;position:absolute;border:0;width:1px;height:1px;clip:rect(1px, 1px, 1px, 1px)}
 
 
 
