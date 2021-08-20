@@ -17,7 +17,7 @@ $ node-sass scss/main.scss public/main.css dist/style.css
 $ node-sass --watch scss/main.scss public/main.css
 기타 옵션은 node-sass CLI에서 확인할 수 있습니다.
 
-#폴더채 컴파일
+#폴더채 컴파일 + 아웃풋 스타일 한줄()
 $ node-sass src/assets/scss/ -o public/css/ --output-style compact
 
 #scss 수정시 자동 컴파일
