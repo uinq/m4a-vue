@@ -1,140 +1,44 @@
 @charset "UTF-8";
-@font-face {
-  font-family: Roboto;
-  font-weight: 100;
-  src: local(※), url(/fonts/Roboto-Regular.woff) format("woff"); }
+@font-face { font-family: Roboto; font-weight: 100; src: local(※), url(/fonts/Roboto-Regular.woff) format("woff"); }
 
-@font-face {
-  font-family: Roboto;
-  font-weight: 400;
-  src: local(※), url(/fonts/Roboto-Medium.woff) format("woff"); }
+@font-face { font-family: Roboto; font-weight: 400; src: local(※), url(/fonts/Roboto-Medium.woff) format("woff"); }
 
-@font-face {
-  font-family: Roboto;
-  font-weight: 700;
-  src: local(※), url(/fonts/Roboto-Bold.woff) format("woff"); }
+@font-face { font-family: Roboto; font-weight: 700; src: local(※), url(/fonts/Roboto-Bold.woff) format("woff"); }
 
-@font-face {
-  font-family: 'NanumSquareRound';
-  font-weight: 100;
-  src: url(/fonts//NanumSquareRoundL.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundL.woff) format("woff"); }
+@font-face { font-family: 'NanumSquareRound'; font-weight: 100; src: url(/fonts//NanumSquareRoundL.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundL.woff) format("woff"); }
 
-@font-face {
-  font-family: 'NanumSquareRound';
-  font-weight: 400;
-  src: url(/fonts//NanumSquareRoundR.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundR.woff) format("woff"); }
+@font-face { font-family: 'NanumSquareRound'; font-weight: 400; src: url(/fonts//NanumSquareRoundR.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundR.woff) format("woff"); }
 
-@font-face {
-  font-family: 'NanumSquareRound';
-  font-weight: 700;
-  src: url(/fonts//NanumSquareRoundB.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundB.woff) format("woff"); }
+@font-face { font-family: 'NanumSquareRound'; font-weight: 700; src: url(/fonts//NanumSquareRoundB.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundB.woff) format("woff"); }
 
-@font-face {
-  font-family: 'NanumSquareRound';
-  font-weight: 900;
-  src: url(/fonts//NanumSquareRoundEB.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundEB.woff) format("woff"); }
+@font-face { font-family: 'NanumSquareRound'; font-weight: 900; src: url(/fonts//NanumSquareRoundEB.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundEB.woff) format("woff"); }
 
-#skipNav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; }
+#skipNav { position: absolute; top: 0; left: 0; width: 100%; }
 
-#skipNav a {
-  position: relative;
-  display: block;
-  opacity: 0;
-  text-align: center;
-  font-weight: bold;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.4);
-  height: 0;
-  transition: all .4s; }
+#skipNav a { position: relative; display: block; opacity: 0; text-align: center; font-weight: bold; color: #fff; background: rgba(0, 0, 0, 0.4); height: 0; transition: all .4s; }
 
-#skipNav a:focus {
-  opacity: 1;
-  z-index: 1000;
-  padding: 10px 0px;
-  height: auto; }
+#skipNav a:focus { opacity: 1; z-index: 1000; padding: 10px 0px; height: auto; }
 
-#skipNav a:hover {
-  text-decoration: underline; }
+#skipNav a:hover { text-decoration: underline; }
 
-body {
-  font-size: 1.6rem;
-  height: 100vh;
-  color: #000; }
+body { font-size: 1.6rem; height: 100vh; color: #000; }
 
-#header #logo {
-  width: 80px;
-  height: 25px;
-  position: absolute;
-  left: 180px;
-  top: 100px; }
+#header #logo { width: 80px; height: 25px; position: absolute; left: 180px; top: 100px; }
 
-#header #logo > a {
-  display: block;
-  height: 100%;
-  width: 100%;
-  background: url("/images/logo.png") 0 0 no-repeat;
-  background-size: 100% auto;
-  overflow: hidden;
-  color: transparent;
-  font-size: 6px; }
+#header #logo > a { display: block; height: 100%; width: 100%; background: url("/images/logo.png") 0 0 no-repeat; background-size: 100% auto; overflow: hidden; color: transparent; font-size: 6px; }
 
-#footer address {
-  position: absolute;
-  left: 100px;
-  bottom: 90px;
-  font-size: 1.2rem; }
+#footer address { position: absolute; left: 100px; bottom: 90px; font-size: 1.2rem; }
 
-#footer .sales-inquiry {
-  position: absolute;
-  right: 100px;
-  top: 100px;
-  font-size: 1.2rem;
-  text-align: right;
-  font-weight: bold; }
+#footer .sales-inquiry { position: absolute; right: 100px; top: 100px; font-size: 1.2rem; text-align: right; font-weight: bold; }
 
-#footer .sales-inquiry .btn-copy {
-  padding: 0 12px;
-  height: 18px;
-  line-height: 18px;
-  border-radius: 9px;
-  background-color: #000;
-  font-size: 1rem;
-  color: #fff;
-  font-weight: bold;
-  position: absolute;
-  right: 5px;
-  top: 0px;
-  padding-top: 1px; }
+#footer .sales-inquiry .btn-copy { padding: 0 12px; height: 18px; line-height: 18px; border-radius: 9px; background-color: #000; font-size: 1rem; color: #fff; font-weight: bold; position: absolute; right: 5px; top: 0px; padding-top: 1px; }
 
-#footer .sales-inquiry .tit {
-  position: absolute;
-  left: 5px;
-  top: 0;
-  font-weight: 900; }
+#footer .sales-inquiry .tit { position: absolute; left: 5px; top: 0; font-weight: 900; }
 
-#footer .sales-inquiry .email {
-  padding-left: 80px;
-  padding-right: 75px;
-  padding-bottom: 5px;
-  display: block;
-  position: relative; }
+#footer .sales-inquiry .email { padding-left: 80px; padding-right: 75px; padding-bottom: 5px; display: block; position: relative; }
 
-#footer .sales-inquiry .tel {
-  position: relative;
-  display: inline-block;
-  padding: 0px 5px 5px;
-  margin-top: 20px; }
+#footer .sales-inquiry .tel { position: relative; display: inline-block; padding: 0px 5px 5px; margin-top: 20px; }
 
-#footer .sales-inquiry .tel:after,
-#footer .sales-inquiry .email:after {
-  content: '';
-  height: 1px;
-  background: #000;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  right: 0; }
+#footer .sales-inquiry .tel:after, #footer .sales-inquiry .email:after { content: ''; height: 1px; background: #000; position: absolute; bottom: 0; width: 100%; right: 0; }
+
+font { font-size: 120%; }
