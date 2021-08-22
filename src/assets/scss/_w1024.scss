@@ -1,0 +1,13 @@
+@import "_variables";
+@include device1{
+    #header .btn-nav{left:50px;top:53px;}
+    #header #logo{top:50px;left:100px;}
+    #header #nav > ul{left:100px;transform:translateY(-75%)}
+    #header #nav .nav-link:before{left:300px;width:calc(100vw - 410px);background-position:center center !important;background-size:auto 100% !important;}
+    #header #nav .nav-link:hover:before{left:260px;}
+
+    #footer .sales-inquiry{right:50px;top:50px;}
+    #footer address{left:50px;bottom:50px;}
+
+
+}

@@ -1,4 +1,31 @@
-$base-font-size:1.6rem;
+$base-font-size:1.4rem;
 $base-url:"/images";
 $base-color:#000;
 $base-height:100vh;
+$device1:1024px;
+$device2:640px;
+$device3:340px;
+$pc-max-height:768px;
+@mixin device1 {
+    @media only screen and (max-width: #{$device1}){
+        @content;
+    }
+}
+
+@mixin device2 {
+    @media only screen and (max-width: #{$device2}){
+        @content;
+    }
+}
+
+@mixin device3 {
+    @media only screen and (max-width: #{$device3}){
+        @content;
+    }
+}
+
+@mixin pcMaxHeight1 {
+    @media only screen and (max-height: #{$pc-max-height}){
+        @content;
+    }
+}
