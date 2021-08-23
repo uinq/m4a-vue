@@ -56,6 +56,12 @@ body{font-size:$base-font-size;height:$base-height;color:$base-color;}
 #footer .inner-wrap .btn-sales-detail:after{content:'';position:absolute;height:0;width:0;border:5px solid transparent;border-left:0;border-right-color:#000;border-top-width:4px;border-bottom-width:4px;left:0;top:50%;transform:translateY(-50%);margin-top:-2px;}
 #footer .inner-wrap.on .btn-sales-detail:after{transform:rotate(180deg) translateY(50%)}
 
+//home
+.home.contents{display: flex;flex-direction: column;flex-flow: column-reverse;align-items: center;height:100vh;overflow:hidden;position:relative;}
+.home.contents .home-art1{position:absolute;position:absolute;width:100%;bottom:0;}
+.home.contents .home-art2{position:absolute;width:100%;height:100vh;left:0;top:100vh;background:rgba(0,0,0,0.3);box-sizing:border-box;}
+.home.contents .home-art3{background:#ff9900;flex:1;width:100%}
+
 
 @include pcMaxHeight1{
     body.pc #header #nav > ul{top:180px;transform:translateY(0)}

@@ -1,7 +1,7 @@
 <template>
 <footer id="footer" class="footer">
   <div class="sales-inquiry">
-    <div id="salesInquiryWrap" class="inner-wrap">
+    <div id="salesInquiryWrap" class="inner-wrap" :class="{ on : saleInActive }">
       <h2 class="tit">영업문의.</h2>
       <button class="btn-sales-detail" @click="salesDetail"><span class="hidden" >이메일 전화번호 보기</span></button>
       <div id="salesInquiry" class="detail">
@@ -17,13 +17,14 @@
 </template>
 <script>
 export default {
+  data () {
+    return {
+      saleInActive: false
+    }
+  },
   methods: {
     salesDetail () {
-      if (document.querySelector('#salesInquiryWrap').classList.contains('on')) {
-        document.querySelector('#salesInquiryWrap').classList.remove('on')
-      } else {
-        document.querySelector('#salesInquiryWrap').classList.add('on')
-      }
+      this.saleInActive === true ? this.saleInActive = false : this.saleInActive = true
     },
     // copy to clipboard
     copyText () {
