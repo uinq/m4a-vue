@@ -12,19 +12,17 @@
     </article>
     <article id="homeMore" class="home-art2">2</article>
     <article id="homeSwiper" class="home-art3">
-
+      <HomeSwiper />
     </article>
   </section>
 </template>
 
 <script>
-// // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
-// export default {
-//   name: 'Home',
-//   components: {
-//     HelloWorld
-//   }
-// }
+import HomeSwiper from '@/components/HomeSwiper.vue'
+export default {
+  name: 'Home',
+  components: {
+    HomeSwiper
+  }
+}
 </script>
