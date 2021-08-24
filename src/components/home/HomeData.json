@@ -1,9 +1,9 @@
 [
-  {"cls":"main-item1","ptn":"신한카드","prj":"MyAUTO <span>RENEWAL</span>","url":""},
-  {"cls":"main-item2","ptn":"신한카드","prj":"ONLINE CHANNEL MAINTENANCE","url":""},
-  {"cls":"main-item3","ptn":"신한카드","prj":"ShinhanCard MOBILE <span>RENEWAL</span>","url":""},
-  {"cls":"main-item3","ptn":"KEB하나은행","prj":"KEB Hana Bank MAINTENANCE","url":""},
-  {"cls":"main-item3","ptn":"하나카드","prj":"HANA MEMBERS APP <span>RENEWAL</span>","url":""},
-  {"cls":"main-item3","ptn":"SC제일은행","prj":"SELF BANK APP <span>LAUNCHING</span>","url":""},
-  {"cls":"main-item3","ptn":"SC제일은행","prj":"DIGITAL COUNTER","url":""}
+  {"cls":"prj-item1","ptn":"신한카드","prj":"MyAUTO","prj2":"RENEWAL","url":""},
+  {"cls":"prj-item2","ptn":"신한카드","prj":"ONLINE CHANNEL MAINTENANCE","prj2":"","url":""},
+  {"cls":"prj-item3","ptn":"신한카드","prj":"ShinhanCard MOBILE","prj2":"RENEWAL","url":""},
+  {"cls":"prj-item4","ptn":"KEB하나은행","prj":"KEB Hana Bank MAINTENANCE","prj2":"","url":""},
+  {"cls":"prj-item5","ptn":"하나카드","prj":"HANA MEMBERS APP","prj2":"RENEWAL","url":""},
+  {"cls":"prj-item6","ptn":"SC제일은행","prj":"SELF BANK APP","prj2":"LAUNCHING","url":""},
+  {"cls":"prj-item7","ptn":"SC제일은행","prj":"DIGITAL COUNTER","prj2":"","url":""}
 ]
