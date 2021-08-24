@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import HomeSwiper from '@/components/HomeSwiper.vue'
+import HomeSwiper from '@/components/home/HomeSwiper.vue'
 export default {
   name: 'Home',
   components: {
