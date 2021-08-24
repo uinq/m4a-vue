@@ -13,6 +13,14 @@
 
 @font-face { font-family: 'NanumSquareRound'; font-weight: 900; src: url(/fonts//NanumSquareRoundEB.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundEB.woff) format("woff"); }
 
+@font-face { font-family: 'NanumSquare'; font-weight: 100; src: url(/fonts/d/NanumSquareL.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquare'; font-weight: 400; src: url(/fonts/d/NanumSquareR.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquare'; font-weight: 700; src: url(/fonts/d/NanumSquareB.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquareR'; font-weight: 900; src: url(/fonts/d/NanumSquareEB.woff) format("woff"); }
+
 #skipNav { position: absolute; top: 0; left: 0; width: 100%; }
 
 #skipNav a { position: relative; display: block; opacity: 0; text-align: center; font-weight: bold; color: #fff; background: rgba(0, 0, 0, 0.4); height: 0; transition: all .4s; }
