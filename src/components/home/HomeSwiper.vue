@@ -66,7 +66,24 @@ export default {
       // hidePrjList: prjList2
     }
   },
+  mounted () {
+    this.refleshPage()
+  },
   methods: {
+    refleshPage () {
+      var $this = this
+      window.outerWidth > 640 ? document.querySelector('html').classList.add('wide') : document.querySelector('html').classList.remove('wide')
+      window.addEventListener('resize', function (event) {
+        if (window.outerWidth > 640 && !document.querySelector('html').classList.contains('wide')) {
+          document.querySelector('html').classList.add('wide')
+          $this.$router.go()
+        } else if (window.outerWidth <= 640 && document.querySelector('html').classList.contains('wide')) {
+          document.querySelector('html').classList.remove('wide')
+          $this.$router.go()
+        }
+      })
+    }
+
   }
 }
 </script>

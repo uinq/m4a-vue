@@ -32,7 +32,7 @@ export default {
     },
     closeNav () {
       const footSale = document.querySelector('.sales-inquiry').classList
-      this.isActive = false
+      this.headerActive = false
       footSale.remove('on')
     }
   }
