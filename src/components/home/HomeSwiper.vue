@@ -109,8 +109,8 @@ export default {
 </script>
 
 <style lang="scss">
-#homeSwiper .splide{
-  .splide__slider{position:relative;
+#homeSwiper .splide{ height:100%;
+  .splide__slider{position:relative;height:100%;
     .splide__arrows{
       .splide__arrow--prev{left:90px;text-align:right;}
       .splide__arrow--prev:before{content:'';width:15px;height:15px;border-left:1px solid #000;position:absolute;left:8px;bottom:0;transform:skew(-45deg);}
@@ -123,8 +123,8 @@ export default {
       .splide__arrow--prev:hover{font-weight:900;left:100px;}
       .splide__arrow--next:hover{font-weight:900;right:100px;}
     }
-    .splide__track{
-      .splide__list{height:100vh;
+    .splide__track{height:100%;
+      .splide__list{height:100%;
         .splide__slide{position:absolute;left:0;top:0;opacity:0;width:100%;height:100%;background:url(http://www.m4a.co.kr/m4a_2019/images/common/logo_m4a.png) center center no-repeat;background-size:cover;transition: opacity .8s ease-in-out !important;pointer-events: none;z-index:0;}
         .splide__slide.is-active{transition: opacity 1s ease-out !important;z-index:5;pointer-events:auto;}
         .splide__slide.is-active{opacity:1;}
