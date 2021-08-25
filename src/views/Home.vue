@@ -22,7 +22,7 @@
             <slot v-if="plist.url === 'none'">
               <div class="item">
                 <div class="txt1">{{plist.ptn}}</div>
-                <div class="txt1">{{plist.prj}}</div>
+                <div class="txt2">{{plist.prj}}</div>
               </div>
             </slot>
             <slot v-else>
