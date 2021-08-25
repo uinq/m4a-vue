@@ -15,7 +15,7 @@
       <HomeSwiper />
     </article>
 
-    <article id="homeMore" class="home-art2">
+    <article id="homeMore" class="home-art2 on">
       <div class="prj-list">
         <ul>
           <li v-for="plist in homeMoreList" :key="plist.cls">
