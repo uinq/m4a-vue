@@ -134,7 +134,7 @@ export default {
         .splide__slide.prj-item4{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj04/pic_project.jpg)}
         .splide__slide.prj-item5{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj05/pic_project.jpg)}
         .splide__slide.prj-item6{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj06/pic_project.jpg)}
-        .splide__slide:before{content:'';width:100%;height:100%;position:absolute;left:0;top:0;background:#fff;opacity:0.4}
+        .splide__slide:before{content:'';width:100%;height:100%;position:absolute;left:0;top:0;background:#fff;opacity:0.5}
       }
     }
   }
