@@ -5,7 +5,7 @@ $base-height:100vh;
 $device1:1024px;
 $device2:640px;
 $device3:340px;
-$pc-max-height:768px;
+$pc-max-height:640px;
 @mixin device1 {
     @media only screen and (max-width: #{$device1}){
         @content;

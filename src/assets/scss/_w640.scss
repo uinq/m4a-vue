@@ -1,28 +1,28 @@
 @include device2{
-    body{min-height:360px;}
-    #header #logo{top:25px;left:60px;width:50px;height:20px;}
-    #header .btn-nav{left:20px;top:26px;width:23px;height:14px;}
-    #header .btn-nav:after,
-    #header .btn-nav:before,
-    #header .btn-nav span{height:2px}
-    #header #nav > ul{left:23px;right:auto;top:125px;transform: translateY(0);}
-    #header #nav a{font-size: 2.7rem;}
-    #header #nav .nav-item + .nav-item{margin-top:40px}
-    #header #nav .nav-link:before,
-    #header #nav .nav-link:after{display:none;}
-    #footer address{left:0px;bottom:20px;font-size:1.0rem;text-align:center;width:100%;}
-    #footer .sales-inquiry{right:auto;left:-100%;top:auto;bottom:90px;text-align:left;font-size:1.6rem;transition:all .6s ease-in-out;}
-    #footer .sales-inquiry.on{left:15px;}
-    #footer .sales-inquiry .inner-wrap{left:0}
-    #footer .btn-sales-detail{display: none;}
-    #footer .sales-inquiry .email:after,
-    #footer .sales-inquiry .tel:after{display:none;}
-    #footer .sales-inquiry .email{padding-left:85px;font-size:1.4rem;padding-top:2px;}
-    #footer .sales-inquiry .btn-copy{top:3px;right:15px;}
-    #footer .sales-inquiry .tel{margin-left:75px;margin-top:0px;font-size:1.2rem;}
-    #footer .sales-inquiry .brochure{display:block;margin-left:10px;margin-top:30px;padding-bottom:10px;}
-    #footer .sales-inquiry .brochure > a{font-size:1.1rem;font-weight:900;position:relative;}
-    #footer .sales-inquiry .brochure > a:before{content:'';height:1px;width:140px;background:#000;position:absolute;left:0;bottom:-10px;}
-    #footer .sales-inquiry .brochure > a:after{content:'';position:absolute;transform: skew(40deg);width: 10px;height: 6px;border-right: 1px solid #000;bottom:-10px;left:128px;}
+  body{min-height:$pc-max-height;}
+  #header #logo{top:25px;left:60px;width:50px;height:20px;}
+  #header .btn-nav{left:20px;top:26px;width:23px;height:14px;}
+  #header .btn-nav:after,
+  #header .btn-nav:before,
+  #header .btn-nav span{height:2px}
+  #header #nav > ul{left:23px;right:auto;top:125px;transform: translateY(0);}
+  #header #nav a{font-size: 2.7rem;}
+  #header #nav .nav-item + .nav-item{margin-top:40px}
+  #header #nav .nav-link:before,
+  #header #nav .nav-link:after{display:none;}
+  #footer address{left:0px;bottom:20px;font-size:1.0rem;text-align:center;width:100%;}
+  #footer .sales-inquiry{right:auto;left:-100%;top:auto;bottom:90px;text-align:left;font-size:1.6rem;transition:all .6s ease-in-out;}
+  #footer .sales-inquiry.on{left:15px;}
+  #footer .sales-inquiry .inner-wrap{left:0}
+  #footer .btn-sales-detail{display: none;}
+  #footer .sales-inquiry .email:after,
+  #footer .sales-inquiry .tel:after{display:none;}
+  #footer .sales-inquiry .email{padding-left:85px;font-size:1.4rem;padding-top:2px;}
+  #footer .sales-inquiry .btn-copy{top:3px;right:15px;}
+  #footer .sales-inquiry .tel{margin-left:75px;margin-top:0px;font-size:1.2rem;}
+  #footer .sales-inquiry .brochure{display:block;margin-left:10px;margin-top:30px;padding-bottom:10px;}
+  #footer .sales-inquiry .brochure > a{font-size:1.1rem;font-weight:900;position:relative;}
+  #footer .sales-inquiry .brochure > a:before{content:'';height:1px;width:140px;background:#000;position:absolute;left:0;bottom:-10px;}
+  #footer .sales-inquiry .brochure > a:after{content:'';position:absolute;transform: skew(40deg);width: 10px;height: 6px;border-right: 1px solid #000;bottom:-10px;left:128px;}
 
 }
