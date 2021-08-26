@@ -7,7 +7,8 @@
         <p class="brochure"><a href="http://www.m4a.co.kr/upload/brochure/M4A_Brochure_2018_01.pdf" target="_blank" title="새창">COMPANY BROCHURE</a></p>
       </div>
       <div class="home-view-more">
-        <a href="#homeMore" class="btn-home-more">VIEW MORE? <br /> THEN, <br /> SCROLL DOWN OR ↓ ARROW.</a>
+        <a href="#homeMore" class="btn-home-more">VIEW MORE? <br /> THEN, <br /> SCROLL DOWN <span class="hidden"><br /> or <br /> ↓ ARROW.</span></a>
+        <div class="ani-arrow"></div>
       </div>
     </article>
 
@@ -15,7 +16,7 @@
       <HomeSwiper />
     </article>
 
-    <article id="homeMore" class="home-art2 on">
+    <article id="homeMore" class="home-art2">
       <div class="prj-list">
         <ul>
           <li v-for="plist in homeMoreList" :key="plist.cls">
@@ -52,6 +53,27 @@ export default {
   data () {
     return {
       homeMoreList: prjList
+    }
+  },
+  mounted () {
+    // 마우스휠 이벤트 마운트
+    window.addEventListener('wheel', this.whiteMode)
+    // 키다운 이벤트 마운트
+    window.addEventListener('keydown', this.whiteMode)
+  },
+  unmounted () {
+    document.querySelector('#m4aVueApp').classList.remove('white-mode')
+    // 이벤트 리스너 삭제
+    window.removeEventListener('wheel', this.whiteMode)
+    window.removeEventListener('keydown', this.whiteMode)
+  },
+  methods: {
+    whiteMode (e) {
+      if (e.deltaY < 0 || e.keyCode === 38) {
+        document.querySelector('#m4aVueApp').classList.remove('white-mode')
+      } else if (e.deltaY > 0 || e.keyCode === 40) {
+        document.querySelector('#m4aVueApp').classList.add('white-mode')
+      }
     }
   }
 }

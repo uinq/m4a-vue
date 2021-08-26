@@ -37,7 +37,7 @@ body.pc { min-height: 768px; }
 
 #header #logo { width: 80px; height: 25px; position: absolute; left: 180px; top: 100px; z-index: 10; transition: all .4s ease-in-out; }
 
-#header #logo > a { display: block; height: 100%; width: 100%; background: url("/images/logo.png") 0 0 no-repeat; background-size: 100% auto; overflow: hidden; color: transparent; font-size: 0.6rem; }
+#header #logo > a { display: block; height: 100%; width: 100%; background: url("/images/logo.png") 0 0 no-repeat; background-size: 100% auto; overflow: hidden; color: transparent; font-size: 0.6rem; transition: all .6s ease-in-out; }
 
 #header .btn-nav { width: 25px; height: 16px; position: absolute; left: 101px; top: 104px; overflow: hidden; font-size: 0; z-index: 10; transition: all .4s ease-in-out; }
 
@@ -93,7 +93,7 @@ body.pc { min-height: 768px; }
 
 #footer .sales-inquiry { position: absolute; right: 100px; top: 100px; font-size: 1.2rem; text-align: right; font-weight: bold; z-index: 20; transition: all .4s ease-in-out; overflow: hidden; }
 
-#footer .sales-inquiry .btn-copy { padding: 0 12px; height: 18px; line-height: 18px; border-radius: 9px; background-color: #000; font-size: 1rem; color: #fff; font-weight: bold; position: absolute; right: 5px; top: 0px; padding-top: 1px; }
+#footer .sales-inquiry .btn-copy { padding: 0 12px; height: 18px; line-height: 18px; border-radius: 9px; background-color: #000; font-size: 1rem; color: #fff; font-weight: bold; position: absolute; right: 5px; top: 0px; padding-top: 1px; transition: all .4s ease-in-out; }
 
 #footer .sales-inquiry .tit { position: absolute; left: 10px; top: 0; font-weight: 900; }
 
@@ -103,11 +103,11 @@ body.pc { min-height: 768px; }
 
 #footer .sales-inquiry .tel a { position: relative; padding-right: 25px; }
 
-#footer .sales-inquiry .tel a:after { content: ''; width: 18px; height: 18px; position: absolute; right: 0; top: -2px; background: url("/images/tel1.png") 0 0 no-repeat; background-size: 100% auto; }
+#footer .sales-inquiry .tel a:after { content: ''; width: 18px; height: 18px; position: absolute; right: 0; top: -2px; background: url("/images/tel1.png") 0 0 no-repeat; background-size: 100% auto; transition: all .4s ease-in-out; }
 
 #footer .sales-inquiry .brochure { display: none; }
 
-#footer .sales-inquiry .tel:after, #footer .sales-inquiry .email:after { content: ''; height: 1px; background: #000; position: absolute; bottom: 0; width: 100%; right: 0; }
+#footer .sales-inquiry .tel:after, #footer .sales-inquiry .email:after { content: ''; height: 1px; background: #000; position: absolute; bottom: 0; width: 100%; right: 0; transition: all .4s ease-in-out; }
 
 #footer .btn-sales-detail { position: absolute; left: 0; top: 0; z-index: 10; width: 60px; height: 20px; }
 
@@ -115,33 +115,81 @@ body.pc { min-height: 768px; }
 
 #footer .sales-inquiry .inner-wrap.on { left: 0; }
 
-#footer .inner-wrap .btn-sales-detail:after { content: ''; position: absolute; height: 0; width: 0; border: 5px solid transparent; border-left: 0; border-right-color: #000; border-top-width: 4px; border-bottom-width: 4px; left: 0; top: 50%; transform: translateY(-50%); margin-top: -2px; }
+#footer .inner-wrap .btn-sales-detail:after { content: ''; position: absolute; height: 0; width: 0; border: 5px solid transparent; border-left: 0; border-right-color: #000; border-top-width: 4px; border-bottom-width: 4px; left: 0; top: 50%; transform: translateY(-50%); margin-top: -2px; transition: all .4s ease-in-out; }
 
 #footer .inner-wrap.on .btn-sales-detail:after { transform: rotate(180deg) translateY(50%); }
 
 .home.contents { display: flex; flex-direction: column; flex-flow: column-reverse; align-items: center; height: 100vh; overflow: hidden; position: relative; }
 
-.home.contents .home-art1 { position: absolute; position: absolute; width: 100%; bottom: 0; }
+.home-art1 { position: absolute; left: 0; bottom: 0; z-index: 3; width: 100%; }
 
-.home.contents .home-art2 { position: fixed; width: 100%; height: 100%; left: 0; top: 100%; background: rgba(0, 0, 0, 0.5); box-sizing: border-box; z-index: 5; color: #fff; }
+.home-art1 .home-subject { display: none; }
 
-.home.contents .home-art2.on { top: 0; }
+.home-art1 .home-view-more { position: absolute; left: 50%; bottom: 70px; font-size: 1.6rem; font-weight: 900; }
 
-.home.contents .home-art2 .prj-list { position: absolute; left: 180px; right: 180px; top: 300px; }
+.home-art1 .btn-home-more { display: block; }
 
-.home.contents .home-art2 .prj-list > ul { display: flex; flex-wrap: wrap; }
+.home-art2 { position: fixed; width: 100%; height: 100%; left: 0; top: 100%; background: rgba(0, 0, 0, 0.7); box-sizing: border-box; z-index: 5; color: #fff; transition: all .8s ease-in-out; opacity: 1; border-radius: 30px; }
 
-.home.contents .home-art2 .prj-list > ul > li { width: 50%; box-sizing: border-box; }
+.home-art2.on { top: 0; }
 
-.home.contents .home-art2 .prj-list > ul > li:nth-child(even) { padding-left: 20px; }
+.home-art2 .prj-list { position: absolute; left: 50%; right: 180px; top: 50%; transform: translate(-50%, -50%); width: 1000px; }
 
-.home.contents .home-art2 .prj-list > ul > li:nth-child(odd) { padding-right: 20px; }
+.home-art2 .prj-list > ul { display: flex; flex-wrap: wrap; }
 
-.home.contents .home-art2 .prj-list > ul > li .item { display: block; line-height: 1.2; }
+.home-art2 .prj-list > ul > li { box-sizing: border-box; margin-bottom: 60px; }
 
-.home.contents .home-art2 .prj-list > ul > li .txt1 { font-size: 1.4rem; font-weight: bold; }
+.home-art2 .prj-list > ul > li:nth-child(even) { width: 45%; }
 
-.home.contents .home-art2 .prj-list > ul > li .txt2 { font-size: 2.8rem; font-weight: 900; word-break: break-all; }
+.home-art2 .prj-list > ul > li:nth-child(odd) { width: 50%; margin-right: 5%; }
+
+.home-art2 .prj-list > ul > li:nth-last-child(2) { margin-bottom: 0; }
+
+.home-art2 .prj-list > ul > li:nth-last-child(1) { margin-bottom: 0; }
+
+.home-art2 .prj-list > ul > li .item { display: inline-block; line-height: 1.2; opacity: 1; transition: all .4s ease-in-out; position: relative; }
+
+.home-art2 .prj-list > ul > li .item:before { content: ''; height: 1px; width: 0; background: #fff; position: absolute; bottom: -15px; left: 0; transition: all .4s ease-in-out; }
+
+.home-art2 .prj-list > ul > li .item:after { content: ''; }
+
+.home-art2 .prj-list > ul > li a.item:hover { opacity: 1; }
+
+.home-art2 .prj-list > ul > li a.item:hover:before { width: calc(100% + 30px); }
+
+.home-art2 .prj-list > ul > li .txt1 { font-size: 1.4rem; font-weight: bold; }
+
+.home-art2 .prj-list > ul > li .txt2 { font-size: 2.8rem; font-weight: 900; word-break: break-all; margin-top: 10px; }
+
+.home-art2 .prj-list > ul > li .btn-all-project { display: inline-block; font-weight: bold; font-size: 1.4rem; position: relative; width: 300px; padding-bottom: 10px; border-bottom: 1px solid #fff; margin-top: 20px; transition: all .4s ease-in-out; }
+
+.home-art2 .prj-list > ul > li .btn-all-project:before { width: 10px; height: 20px; transform: skew(35deg); position: absolute; right: 5px; bottom: -1px; border-right: 2px solid #fff; }
+
+.home-art2 .prj-list > ul > li .btn-all-project:hover { transform: scale(1.1); }
+
+.white-mode .home-art2 { top: 0; opacity: 1; border-radius: 0; transition-delay: .3s; }
+
+.white-mode #header .btn-nav:before, .white-mode #header .btn-nav:after, .white-mode #header .btn-nav span { background: #fff; transition-delay: .6s; }
+
+.white-mode #header #logo > a { background-image: url("/images/logo-w.png"); transition-delay: .6s; }
+
+.white-mode #footer address, .white-mode #footer .sales-inquiry .inner-wrap { color: #fff; transition-delay: .6s; }
+
+.white-mode #footer .inner-wrap .btn-sales-detail:after { border-right-color: #fff; transition-delay: .6s; }
+
+.white-mode #footer .sales-inquiry .tel:after, .white-mode #footer .sales-inquiry .email:after { background: #fff; transition-delay: .6s; }
+
+.white-mode #footer .sales-inquiry .btn-copy { background: #fff; transition-delay: .6s; color: #000; }
+
+.white-mode #footer .sales-inquiry .tel a:after { background-image: url("/images/tel1-w.png"); transition-delay: .6s; }
+
+.white-mode #homeSwiper .splide .info { transform: translateY(-100%); opacity: 0; transition-duration: .5s; transition-delay: 0; }
+
+.white-mode #homeSwiper .splide .splide__slider .splide__arrows button { top: 60%; opacity: 0; transition-delay: 0; transition-duration: .5s; }
+
+.white-mode #homeSwiper .splide .pagiation-num { top: 40%; opacity: 0; transition-delay: 0; transition-duration: .5s; }
+
+.white-mode #homeSwiper .splide .splide__autoplay { opacity: 0; transition-delay: .6s; }
 
 .home.contents .home-art3 { flex: 1; width: 100%; height: 100%; }
 

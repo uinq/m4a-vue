@@ -63,6 +63,10 @@ export default {
   mounted () {
     this.refleshPage()
   },
+  beforeUnmount () {
+    // splide destroy
+    this.$refs.homeSwiper.splide.destroy()
+  },
   methods: {
     // 정지버튼
     autoplayPause () {
@@ -78,16 +82,20 @@ export default {
     },
     // 페이지네이션 업데이트시 중앙슬라이드 숫자 처리
     paginationUpdated () {
-      const actIndex = function () {
-        const elArr = document.querySelector('.splide__pagination').getElementsByTagName('li')
-        for (var i = 0; i < elArr.length; i++) {
-          if (elArr[i].firstChild.classList.contains('is-active')) {
-            return i
-          }
-        }
-      }
-      this.activePage = actIndex() + 1
-      this.totalPage = document.querySelector('.splide__pagination').getElementsByTagName('li').length
+      // if (document.getElementsByClassName('splide__pagination').length > 0) {
+      //   const actIndex = function () {
+      //     const elArr = document.querySelector('.splide__pagination').getElementsByTagName('li')
+      //     for (var i = 0; i < elArr.length; i++) {
+      //       if (elArr[i].firstChild.classList.contains('is-active')) {
+      //         return i
+      //       }
+      //     }
+      //   }
+      //   this.activePage = actIndex() + 1
+      //   this.totalPage = document.querySelector('.splide__pagination').getElementsByTagName('li').length
+      // }
+      this.activePage = this.$refs.homeSwiper.index + 1
+      this.totalPage = this.$refs.homeSwiper.length
     },
     // 640 이하는 슬라이드 변경 리사이즈 640 분기로 리로드(새로고침)
     refleshPage () {
@@ -118,7 +126,7 @@ export default {
       .splide__arrow--next{right:90px;text-align:left;}
       .splide__arrow--next:after{content:'NEXT';}
       .splide__arrow--next:before{content:'';width:15px;height:15px;border-right:1px solid #000;position:absolute;right:8px;bottom:0;transform:skew(45deg);}
-      button{border-bottom:1px solid #000;width:100px;padding:2px 5px;font-size:1.4rem;margin-top:-23px;transition:all .4s ease-in-out;}
+      button{border-bottom:1px solid #000;width:100px;padding:2px 5px;font-size:1.4rem;margin-top:-23px;transition:all .6s ease-in-out;opacity:1;transition-delay: .3s;}
       svg{display:none;}
       .splide__arrow--prev:hover{font-weight:900;left:100px;}
       .splide__arrow--next:hover{font-weight:900;right:100px;}
@@ -134,14 +142,14 @@ export default {
         .splide__slide.prj-item4{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj04/pic_project.jpg)}
         .splide__slide.prj-item5{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj05/pic_project.jpg)}
         .splide__slide.prj-item6{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj06/pic_project.jpg)}
-        .splide__slide:before{content:'';width:100%;height:100%;position:absolute;left:0;top:0;background:#fff;opacity:0.5}
+        .splide__slide:before{content:'';width:100%;height:100%;position:absolute;left:0;top:0;background:#fff;opacity:0.6}
       }
     }
   }
   .splide__progress{position:fixed;z-index:4;width:100%;top:0;left:0;
     .splide__progress__bar{height:2px;background:#000;}
   }
-  .splide__autoplay{position:absolute;z-index:4;right:85px;bottom:80px;
+  .splide__autoplay{position:absolute;z-index:4;right:85px;bottom:80px;transition:all .6s ease-in-out;transition-delay:.3s;opacity:1;
     button{display:inline-block;width:40px;height:40px;color:transparent;position:relative;transition:all .4s ease-in-out}
     button:hover{transform:scale(1.4);}
     .splide__play:after{content:'';position: absolute;height: 0;width: 0;border: 8px solid transparent;border-right: 0;border-left-color: #000;border-top-width: 6px;border-bottom-width: 6px;left:50%;top: 50%;transform: translate(-50%, -50%);margin-left:2px;}
@@ -157,10 +165,10 @@ export default {
     .splide__pagination__page{width:100%;height:2px;border-radius: 0;background:#fff;opacity:0.2;padding:0;margin:0;z-index:0;position:relative;transition:all .6s ease-in-out;}
     .splide__pagination__page.is-active{background:#000;opacity:.8;transform:scale(1.2);z-index:1}
   }
-  .pagiation-num{position:absolute;left:50%;top:50%;z-index:10;font-size:1.6rem;font-weight:bold;margin-top:160px;transform:translate(-50%, -50%)}
+  .pagiation-num{position:absolute;left:50%;top:50%;z-index:3;font-size:1.6rem;font-weight:bold;margin-top:160px;transform:translate(-50%, -50%);transition:all .6s ease-in-out;transition-delay:.3s;opacity:1;}
   .pagiation-num >b{font-weight:900;}
   .pagiation-num > span{margin:0px 6px;}
-  .info{text-align:center;position:absolute;width:100%;top:50%;left:0;transform:translateY(-50%);margin-top:-55px}
+  .info{text-align:center;position:absolute;width:100%;top:50%;left:0;transform:translateY(-50%);margin-top:-55px;opacity:1;transition:all .6s ease-in-out;transition-delay: .3s;}
   .info .contract{font-size:6.0rem;font-weight:900;line-height:1;margin-top:30px;padding:0px 50px;}
   .info .contract > span{display:inline-block;position:relative;position:relative;margin:0px 250px;}
   .info .contract > span:before,
