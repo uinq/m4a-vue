@@ -122,7 +122,7 @@ export default {
     .splide__slider{
       .splide__track{
         .splide__list{
-          .splide__slide{position:relative;opacity:1;}
+          .splide__slide{}
         }
       }
 

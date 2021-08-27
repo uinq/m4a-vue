@@ -8,7 +8,7 @@
         <p id="salesEmail" class="email"><a href="mailto:jinny@m4a.co.kr">jinny@m4a.co.kr</a></p>
         <button class="btn-copy" @click="copyText">COPY</button>
         <p class="tel"><a href="tel:025360518">02.536.0518(161)</a></p>
-        <p class="brochure"><a href="http://www.m4a.co.kr/upload/brochure/M4A_Brochure_2018_01.pdf" target="_blank" title="새창">COMPANY BROCHURE</a></p>
+        <p class="brochure"><a class="com-brochure" href="http://www.m4a.co.kr/upload/brochure/M4A_Brochure_2018_01.pdf" target="_blank" title="새창">COMPANY BROCHURE</a></p>
       </div>
     </div>
   </div>
