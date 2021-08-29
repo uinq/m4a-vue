@@ -1,18 +1,22 @@
 @include device2{
   body{min-height:$pc-max-height;}
+
   .pc-hide{display:block;}
   #header #logo{top:25px;left:60px;width:50px;height:20px;}
   #header .btn-nav{left:17px;top:26px;width:23px;height:14px;}
+  #header .btn-nav{left:13px;top:22px;width:31px;height:22px;}
   #header .btn-nav:after,
   #header .btn-nav:before,
-  #header .btn-nav span{height:2px}
+  #header .btn-nav span{height:2px;width:80%;left:2px;}
+  #header .btn-nav:after{bottom:3px;}
+  #header .btn-nav:before{top:3px;}
   #header #nav{background: linear-gradient(to right,rgba(255,255,255,1) 70%, rgba(255,255,255,0.4) 100%);}
   #header #nav > ul{left:20px;right:auto;top:125px;transform: translateY(0);}
   #header #nav a{font-size: 2.7rem;}
   #header #nav .nav-item + .nav-item{margin-top:40px}
   #header #nav .nav-link:before,
   #header #nav .nav-link:after{display:none;}
-  #footer address{left:0px;bottom:10px;font-size:1.0rem;text-align:center;width:100%;}
+  #footer address{left:0px;bottom:20px;font-size:1.0rem;text-align:center;width:100%;}
   #footer .sales-inquiry{right:auto;left:-100%;top:auto;bottom:55px;text-align:left;font-size:1.6rem;transition:all .6s ease-in-out;margin-left:-6px;}
   #footer .sales-inquiry.on{left:15px;}
   #footer .sales-inquiry .inner-wrap{left:0}
@@ -33,7 +37,15 @@
   .com-brochure{font-size:1.1rem;font-weight:900;position:relative;}
   .com-brochure:before{content:'';height:1px;width:140px;background:#000;position:absolute;left:0;bottom:-10px;}
   .com-brochure:after{content:'';position:absolute;transform: skew(35deg);width: 20px;transform-origin:right bottom;height:7px;border-right: 1px solid #000;bottom:-10px;left:120px;}
-
+  .home-view-more{font-size:1.0rem;bottom:10vh;margin-left:-50px;
+    .ani-arrow{height:40px;bottom:auto;top:0;}
+    .ani-arrow:before{width:10px;height:10px;}
+  }
+  @keyframes moveDown{
+    0%{top:-5px;}
+    50%{top:5px;}
+    100%{top:-5px;}
+  }
   .home-art1{position:relative;background:#fff;flex:1;
     .home-view-more{display:none;}
     .home-subject{display:block;padding:40px 20px 40px;
@@ -51,6 +63,9 @@
       .txt1{font-size:1.1rem;font-weight:normal;}
       .txt2{font-size:1.6rem;}
     }
+  }
+  .home-art3{width:100%;
+
   }
   .home.contents .home-art3{height:auto;background:#000;}
   #homeSwiper .splide .splide__arrows{display:none;}
@@ -82,4 +97,59 @@
   #homeSwiper .splide .splide__slider .splide__track .splide__list .splide__slide.prj-item5{background-image:url(http://www.m4a.co.kr/m_2019/img/main/img_prj_banner4.jpg);}
   #homeSwiper .splide .splide__slider .splide__track .splide__list .splide__slide.prj-item6{background-image:url(http://www.m4a.co.kr/m_2019/img/main/img_prj_banner5.jpg);}
 
+  .contact.contents{padding:70px 20px 40px;;
+    .contact-art-wrap{position:relative;flex-direction: column;top:0;left:0;bottom:0;right:0;padding:20px 0px 35px;box-sizing:border-box;height: calc(100vh - 130px);transition:all .0s ease-in-out;}
+    .contact-art1{width:auto;padding-bottom:30px;position:static;
+      h1{font-size:2.7rem;transition:all .0s ease-in-out}
+      .eng{font-size:1.2rem;margin-top:20px;}
+      .info{margin-top:25px;font-size:1.2rem;}
+      .btn-brochure{width:140px;bottom:10px;font-size:1.1rem;letter-spacing:0;
+      &:before{height:10px;}
+      }
+
+    }
+    .contact-art2{padding-right:0;padding-bottom:30px;}
+  }
+  .about.contents {
+    .art-tpl{padding:60px 20px 0px;}
+    .about-art1{background:url(http://www.m4a.co.kr/m_2019/img/sub/bg_about_01.png) center top no-repeat;background-size:cover;
+      &:before{display:none;}
+      &:after{background:url(http://www.m4a.co.kr/m_2019/img/sub/bg_m4a.png) center 0 no-repeat;background-size:contain;}
+      .subject{margin-top:110px;
+        .tit{font-size:2.0rem;margin:0 auto;line-height:1.2;}
+        .sub-txt{margin-top:10px;font-size:1.1rem;font-weight:normal;letter-spacing:0;}
+      }
+      .home-view-more{bottom:10vh;}
+    }
+    .about-art2{
+      .subject {
+        .tit{font-size:2.4rem;}
+        .sub-txt{font-size:1.4rem;}
+      }
+      .process{display:block;margin-top:30px;
+        [class*=step] + [class*=step]{margin:0;margin-top:20px}
+        .tit{font-size:1.8rem;padding-bottom:0px;border-bottom-width:0px;}
+        .sub-txt{font-size:1.2rem;margin-top:10px;}
+      }
+    }
+    .about-art3{
+      .subject {
+        .tit{font-size:2.4rem;}
+        .sub-txt{font-size:1.4rem;
+          br{display:none;}
+        }
+      }
+      .process{display:flex;margin-top:30px;
+        [class*=step]{width:50%;box-sizing:border-box;padding-bottom:20px;}
+        [class*=step]:nth-child(odd){padding-right:20px;}
+        [class*=step]:nth-child(even){padding-left:30px;}
+        [class*=step] + [class*=step]{margin:0;}
+        .tit{font-size:1.8rem;padding-bottom:10px;border-bottom-width:0px;padding-bottom:0;}
+        .tit:before{display:none;}
+        .sub-txt{font-size:1.2rem;margin-top:10px;
+          li + li{margin-top:1px;}
+        }
+      }
+    }
+  }
 }

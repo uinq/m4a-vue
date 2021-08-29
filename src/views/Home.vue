@@ -45,6 +45,7 @@
 <script>
 import HomeSwiper from '@/components/home/HomeSwiper.vue'
 import { prjList } from '@/components/home/HomeData.json'
+var ts, te // 터치미벤트 변수
 export default {
   name: 'Home',
   components: {
@@ -60,12 +61,16 @@ export default {
     window.addEventListener('wheel', this.whiteMode)
     // 키다운 이벤트 마운트
     window.addEventListener('keydown', this.whiteMode)
+
+    // 터치 이벤트 마운트
+    this.touchHandler()
   },
   unmounted () {
     document.querySelector('#m4aVueApp').classList.remove('white-mode')
     // 이벤트 리스너 삭제
     window.removeEventListener('wheel', this.whiteMode)
     window.removeEventListener('keydown', this.whiteMode)
+    this.touchHandler('destroy')
   },
   methods: {
     whiteMode (e) {
@@ -73,6 +78,24 @@ export default {
         document.querySelector('#m4aVueApp').classList.remove('white-mode')
       } else if (e.deltaY > 0 || e.keyCode === 40) {
         document.querySelector('#m4aVueApp').classList.add('white-mode')
+      }
+    },
+    touchHandler (flag) {
+      window.addEventListener('touchstart', function (ev) {
+        ts = parseInt(ev.touches[0].pageY)
+      })
+      window.addEventListener('touchend', function (ev) {
+        te = parseInt(ev.changedTouches[0].pageY)
+        if (ts - te > 100) {
+          document.querySelector('#m4aVueApp').classList.add('white-mode')
+        } else if (ts - te < -50) {
+          document.querySelector('#m4aVueApp').classList.remove('white-mode')
+        }
+      })
+      if (flag === 'destroy') {
+        window.addEventListener('touchend', function () {
+          document.querySelector('#m4aVueApp').classList.remove('white-mode')
+        })
       }
     }
   }

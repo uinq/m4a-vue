@@ -115,18 +115,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-@media only screen and (max-width: 640px) {
-  #homeSwiper .splide{
-    .splide__slider{
-      .splide__track{
-        .splide__list{
-          .splide__slide{}
-        }
-      }
-
-    }
-  }
-}
-</style>
