@@ -29,7 +29,7 @@
 
 #skipNav a:hover { text-decoration: underline; }
 
-body { font-size: 1.4rem; height: 100vh; color: #000; }
+body { font-size: 1.4rem; color: #000; }
 
 body.pc { min-height: 640px; }
 

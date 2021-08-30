@@ -3,7 +3,7 @@
 #skipNav a:focus{opacity:1;z-index:1000;padding:10px 0px;height:auto;}
 #skipNav a:hover{text-decoration:underline;}
 
-body{font-size:$base-font-size;height:$base-height;color:$base-color;}
+body{font-size:$base-font-size;color:$base-color;}
 body.pc{min-height:$pc-max-height;}
 //header
 #header {position:fixed;z-index:10;}

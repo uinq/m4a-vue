@@ -5,17 +5,17 @@
        <p>4BRAND TREND CONSULTING &amp; DESIGN PARTNER</p>
     </div>
     <div class="about-art-wrap">
-        <article class="about-art1">
+        <article id="aboutArt1" class="about-art1">
           <div class="subject">
             <h2 class="tit">OUR CREATIVE <br class="pc-hide" /> TO YOUR LEGEND.</h2>
             <p class="sub-txt">BRAND TREND CONSULTING &amp; DESIGN PARTNER</p>
           </div>
           <div class="home-view-more">
-            <a href="#homeMore" class="btn-home-more">VIEW MORE? <br /> THEN, <br /> SCROLL DOWN <span class="hidden"><br /> or <br /> ↓ ARROW.</span></a>
+            <button @click="goDown" class="btn-home-more">VIEW MORE? <br /> THEN, <br /> SCROLL DOWN <span class="hidden"><br /> or <br /> ↓ ARROW.</span></button>
             <div class="ani-arrow"></div>
           </div>
         </article>
-        <article class="about-art2">
+        <article id="aboutArt2" class="about-art2">
           <div class="art-tpl">
             <div class="subject">
               <h2 class="tit">Long-term Partnership.</h2>
@@ -37,11 +37,11 @@
             </div>
           </div>
           <div class="home-view-more">
-            <a href="#" class="btn-home-more">VIEW MORE? <br /> THEN, <br /> SCROLL DOWN <span class="hidden"><br /> or <br /> ↓ ARROW.</span></a>
+            <button @click="goDown" class="btn-home-more">VIEW MORE? <br /> THEN, <br /> SCROLL DOWN <span class="hidden"><br /> or <br /> ↓ ARROW.</span></button>
             <div class="ani-arrow"></div>
           </div>
         </article>
-        <article class="about-art3">
+        <article  id="aboutArt3" class="about-art3">
           <div class="art-tpl">
             <div class="subject">
               <h2 class="tit">One-Stop Process</h2>
@@ -93,7 +93,7 @@
             </div>
           </div>
           <div class="home-view-more on">
-            <a href="#" class="btn-home-more">GO TO TOP? <br /> THEN, <br /> CLICK HERE. </a>
+            <button @click="goUp" class="btn-home-more">GO TO TOP? <br /> THEN, <br /> CLICK HERE. </button>
             <div class="ani-arrow"></div>
           </div>
         </article>
@@ -101,19 +101,82 @@
   </section>
 </template>
 <script>
+// 위치변수
+var aboutTpos = 0
+var aboutWh = 0
+var aboutTimer = null
+
 export default {
   data () {
     return {
     }
   },
   mounted () {
+    window.addEventListener('scroll', this.scrollEnd)
   },
   unmounted () {
   },
   methods: {
+    // 화면번호
+    getItemIdx () {
+      aboutTpos = window.scrollY
+      aboutWh = window.outerHeight
+      if (aboutTpos < document.querySelector('#aboutArt2').offsetTop - aboutWh + document.querySelector('#aboutArt1').clientHeight / 2) {
+        return 1
+      } else if (aboutTpos >= document.querySelector('#aboutArt2').offsetTop - aboutWh + document.querySelector('#aboutArt1').clientHeight / 2 && aboutTpos < document.querySelector('#aboutArt3').offsetTop - aboutWh + document.querySelector('#aboutArt2').clientHeight / 2) {
+        return 2
+      } else if (aboutTpos >= document.querySelector('#aboutArt3').offsetTop - aboutWh + document.querySelector('#aboutArt3').clientHeight / 2) {
+        return 3
+      }
+    },
+    // 동작
+    artMove (idx) {
+      this.animteScrollTo('#aboutArt' + idx)
+    },
+    // scollEnd
+    scrollEnd () {
+      const $this = this
+      if (aboutTimer !== null) {
+        clearTimeout(aboutTimer)
+        aboutTimer = null
+      }
+      aboutTimer = setTimeout(function () {
+        $this.artMove($this.getItemIdx())
+      }, 700)
+    },
+    goDown () {
+      this.artMove(this.getItemIdx() + 1)
+    },
+    goUp () {
+      this.artMove(this.getItemIdx() - 2)
+    },
+    animteScrollTo (_selector, _duration, _adjust) {
+      const targetEle = document.querySelector(_selector)
+      if (!targetEle) return
+      // - Get current &amp target positions
+      const scrollEle = document.documentElement || window.scrollingElement
+      const currentY = scrollEle.scrollTop
+      const targetY = targetEle.offsetTop - (_adjust || 0)
+      animateScrollTo(currentY, targetY, _duration)
+      // - Animate and scroll to target position
+      function animateScrollTo (_startY, _endY, _duration) {
+        _duration = 300
+        const unitY = (targetY - currentY) / _duration
+        const startTime = new Date().getTime()
+        const endTime = new Date().getTime() + _duration
+        const scrollTo = function () {
+          const now = new Date().getTime()
+          const passed = now - startTime
+          if (now <= endTime) {
+            scrollEle.scrollTop = currentY + (unitY * passed)
+            requestAnimationFrame(scrollTo)
+          } else {
+            console.log('End off.')
+          }
+        }
+        requestAnimationFrame(scrollTo)
+      }
+    }
   }
 }
 </script>
-<style lang="scss">
-
-</style>
