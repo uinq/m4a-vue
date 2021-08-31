@@ -115,6 +115,7 @@ export default {
     window.addEventListener('scroll', this.scrollEnd)
   },
   unmounted () {
+    window.removeEventListener('scroll', this.scrollEnd)
   },
   methods: {
     // 화면번호
@@ -153,25 +154,29 @@ export default {
     animteScrollTo (_selector, _duration, _adjust) {
       const targetEle = document.querySelector(_selector)
       if (!targetEle) return
-      // - Get current &amp target positions
+      _duration = 400
       const scrollEle = document.documentElement || window.scrollingElement
       const currentY = scrollEle.scrollTop
       const targetY = targetEle.offsetTop - (_adjust || 0)
-      animateScrollTo(currentY, targetY, _duration)
-      // - Animate and scroll to target position
-      function animateScrollTo (_startY, _endY, _duration) {
-        _duration = 300
+      const flagUD = currentY > targetY ? 'up' : 'down'
+      animateScrollTo(currentY, targetY, _duration, flagUD)
+      function animateScrollTo (_startY, _endY, _duration, flag) {
         const unitY = (targetY - currentY) / _duration
         const startTime = new Date().getTime()
-        const endTime = new Date().getTime() + _duration
+        // const endTime = new Date().getTime() + _duration
+        var timeout = null
         const scrollTo = function () {
           const now = new Date().getTime()
           const passed = now - startTime
-          if (now <= endTime) {
+          if (scrollEle.scrollTop < targetY && flag === 'down') {
             scrollEle.scrollTop = currentY + (unitY * passed)
-            requestAnimationFrame(scrollTo)
+            timeout = setTimeout(scrollTo, 0)
+          } else if (scrollEle.scrollTop > targetY && flag === 'up') {
+            scrollEle.scrollTop = currentY + (unitY * passed)
+            timeout = setTimeout(scrollTo, 0)
           } else {
-            console.log('End off.')
+            clearTimeout(timeout)
+            // console.log('End off.')
           }
         }
         requestAnimationFrame(scrollTo)

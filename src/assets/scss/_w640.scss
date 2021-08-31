@@ -38,13 +38,13 @@
   .com-brochure:before{content:'';height:1px;width:140px;background:#000;position:absolute;left:0;bottom:-10px;}
   .com-brochure:after{content:'';position:absolute;transform: skew(35deg);width: 20px;transform-origin:right bottom;height:7px;border-right: 1px solid #000;bottom:-10px;left:120px;}
   .home-view-more{font-size:1.0rem;bottom:10vh;margin-left:-50px;
-    .ani-arrow{height:40px;bottom:auto;top:0;}
+    .ani-arrow{height:50px;bottom:auto;top:-10px;}
     .ani-arrow:before{width:10px;height:10px;}
   }
   @keyframes moveDown{
-    0%{top:-5px;}
-    50%{top:5px;}
-    100%{top:-5px;}
+    0%{top:-10px;}
+    50%{top:0px;}
+    100%{top:-10px;}
   }
   .home-art1{position:relative;background:#fff;flex:1;
     .home-view-more{display:none;}
@@ -111,6 +111,7 @@
     .contact-art2{padding-right:0;padding-bottom:30px;}
   }
   .about.contents {
+    .home-view-more{bottom:10vh;}
     .art-tpl{padding:60px 20px 0px;}
     .about-art1{background:url(http://www.m4a.co.kr/m_2019/img/sub/bg_about_01.png) center top no-repeat;background-size:cover;
       &:before{display:none;}
@@ -119,7 +120,6 @@
         .tit{font-size:2.0rem;margin:0 auto;line-height:1.2;}
         .sub-txt{margin-top:10px;font-size:1.1rem;font-weight:normal;letter-spacing:0;}
       }
-      .home-view-more{bottom:10vh;}
     }
     .about-art2{
       .subject {
