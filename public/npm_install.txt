@@ -1,0 +1,8 @@
+#Works > https://masonry.desandro.com/
+npm install masonry-layout
+
+#Home > https://splidejs.com/integration-vue-splide/
+npm install @splidejs/vue-splide
+
+#node-sass > https://www.npmjs.com/package/node-sass
+npm install node-sass

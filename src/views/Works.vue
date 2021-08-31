@@ -64,14 +64,17 @@ export default {
       var msnry1 = new Masonry(elem1, {
         // options
         itemSelector: '.item',
-        gutter: 50
+        gutter: 50,
+        fitWidth: true,
+        horizontalOrder: true
       })
       console.log()
       var elem2 = document.querySelector('#masonry2')
       var msnry2 = new Masonry(elem2, {
         // options
         itemSelector: '.item',
-        gutter: 50
+        gutter: 50,
+        fitWidth: true
       })
       console.log(msnry1 + '' + msnry2)
     }
