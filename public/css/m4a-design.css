@@ -655,6 +655,8 @@ body.pc { min-height: 640px; }
   .about.contents .about-art3 .process .sub-txt li + li { margin-top: 1px; }
   .works-list-sec:before { height: 90px; }
   .works-list-sec:after { height: 65px; }
+  .works-list-sec .masonry { width: 100% !important; }
   .works-list-sec .works-list-wrap { padding: 85px 20px 0px; }
   .works-list-sec .item { width: 100%; margin-bottom: 60px; }
-  .works-list-sec .item .img-sec { height: auto; } }
+  .works-list-sec .item .img-sec { height: auto; }
+  .works-list-sec .item .img-sec img { width: 100%; } }
