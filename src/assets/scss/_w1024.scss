@@ -52,4 +52,9 @@
   .about.contents .about-art3 .process .step4,
   .about.contents .about-art3 .process .step5{margin-top:30px;}
 
+  .works-list-sec{
+    &:before{height:130px;}
+    &:after{height:120px;}
+    .works-list-wrap{padding:150px 50px 0px;}
+  }
 }

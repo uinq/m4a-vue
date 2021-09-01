@@ -152,4 +152,12 @@
       }
     }
   }
+  .works-list-sec{
+    &:before{height:90px;}
+    &:after{height:65px;}
+    .works-list-wrap{padding:85px 20px 0px;}
+    .item{width:100%;margin-bottom:60px;
+      .img-sec{height:auto;}
+    }
+  }
 }

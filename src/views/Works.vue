@@ -65,8 +65,8 @@ export default {
         // options
         itemSelector: '.item',
         gutter: 50,
-        fitWidth: true,
-        horizontalOrder: true
+        fitWidth: true
+        // horizontalOrder: true
       })
       console.log()
       var elem2 = document.querySelector('#masonry2')
