@@ -54,7 +54,7 @@ export default {
     }
   },
   mounted () {
-    this.masonry()
+    setTimeout(this.masonry, 100)
   },
   unmounted () {
   },
@@ -65,8 +65,8 @@ export default {
         // options
         itemSelector: '.item',
         gutter: 50,
-        fitWidth: true
-        // horizontalOrder: true
+        fitWidth: true,
+        horizontalOrder: true
       })
       console.log()
       var elem2 = document.querySelector('#masonry2')
@@ -78,7 +78,6 @@ export default {
       })
       console.log(msnry1 + '' + msnry2)
     }
-
   }
 }
 </script>

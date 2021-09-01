@@ -10,6 +10,10 @@
   #header .btn-nav span{height:2px;width:80%;left:2px;}
   #header .btn-nav:after{bottom:3px;}
   #header .btn-nav:before{top:3px;}
+  .pc #header .btn-nav:hover:after{width:80%;transform:rotate(0deg);bottom:3px;}
+  .pc #header .btn-nav:hover:before{width:80%;transform:rotate(0deg);top:3px;}
+  .pc #header .btn-nav.on:hover:after{width:80%;transform:rotate(0deg);bottom:3px;}
+  .pc #header .btn-nav.on:hover:before{width:80%;transform:rotate(0deg);top:3px;}
   #header #nav{background: linear-gradient(to right,rgba(255,255,255,1) 70%, rgba(255,255,255,0.4) 100%);}
   #header #nav > ul{left:20px;right:auto;top:125px;transform: translateY(0);}
   #header #nav a{font-size: 2.7rem;}
