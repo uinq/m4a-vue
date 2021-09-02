@@ -2,19 +2,17 @@
   <section id="contents" class="works contents">
     <splide id="splide1" :options="options" class="works-art-wrap detail1">
       <splide-slide class="works-art1">
-        <div class="art-tpl flex-col">
-          <div class="flex-item">
-            <div class="subject">
-              <h1 class="tit">MyAUTO</h1>
-              <p class="sub-txt"><span>PARTNER</span> <span class="plus">+</span> <span>신한카드</span></p>
-            </div>
-            <div class="info">
-              <div class="date"><b>DATE.</b> 2018 F/W</div>
-              <div class="output"><b>OUTPUT.</b> PC WEB / MOBILE WEB / HYBRID APP.W</div>
-            </div>
+        <div class="sec1">
+          <div class="subject">
+            <h1 class="tit">MyAUTO</h1>
+            <p class="sub-txt"><span>PARTNER</span> <span class="plus">+</span> <span>신한카드</span></p>
           </div>
-          <div class="flex-item img-sec"></div>
+          <div class="info">
+            <div class="date"><b>DATE.</b> 2018 F/W</div>
+            <div class="output"><b>OUTPUT.</b> PC WEB / MOBILE WEB / HYBRID APP.W</div>
+          </div>
         </div>
+        <div class="sec2 img-sec"></div>
       </splide-slide>
       <splide-slide class="works-art2">
         <div class="art-tpl">
@@ -64,7 +62,10 @@ export default {
       options: {
         direction: 'ttb',
         height: '100vh',
-        perPage: 1
+        autoHeight: true,
+        perPage: 1,
+        keyboard: true,
+        slideFocus: true
       },
       options2: {
         perPage: 1
@@ -101,9 +102,6 @@ export default {
 }
 </script>
 <style lang="scss">
-.flex-col{display:flex;flex-direction: column;
-  .flex-item{flex:1;}
-}
 .works.contents{
   .art-tpl{padding-top:200px;margin:0px 0px 0px 100px;position:relative;}
   .work-btm-fixed{width:100%;position:fixed;bottom:0;left:0;height:80px;display:flex;box-sizing:border-box;padding:0px 100px;justify-content: space-between;z-index:3;background:rgba(255,255,255,0.1);align-content: center;align-items: center;font-weight: 900;color: #000;
@@ -128,19 +126,12 @@ export default {
     }
   }
   .works-art1{
-    .detail1 .img-sec{}
-    .img-sec{height:584px;overflow:hidden;position:absolute;left:0;bottom:0;width:100%;}
+    .sec1{height:40%}
+    .sec2{height:60%;min-height:408px;position:relative;}
   }
-  .detail1 .img-sec{background:url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail01.png) center -20% no-repeat;background-size:cover;}
+  .detail1 .img-sec{background:#2571cb url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail01.png) center -50px no-repeat;background-size:cover;}
+  .detail1 .img-sec span{position:absolute;bottom:0;left:50%;}
+  .splide__slide{height:100vh;min-height:680px}
+  .splide__track{min-height:680px;}
 }
-.splide__slide{height:100vh;position:relative;
-}
-.splide__slide .splide{position:absolute;left:200px;bottom:200px;width:200px;}
-.splide__slide .splide__slide{height:200px;
-  &:nth-child(1){background:#000}
-  &:nth-child(2){background:#fff}
-  &:nth-child(3){background:#ff9900}
-}
-.splide__slide .splide.ddd{position:absolute;right:200px;left:auto;width:100px}
-
 </style>
