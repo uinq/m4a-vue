@@ -22,6 +22,13 @@
     <meta name="twitter:description" content="M4A, 미디어포스, 1세대 웹에이전시, 대형프로젝트, 웹사이트, 모바일, UI/UX, 온라인마케팅" />
     <meta name="twitter:creator" content="미디어포스 얼라이언스" />
     <meta name="twitter:image:src" content="/images/logo.png" />
+    <script>
+    // ie 에서 edge로 리다이렉트
+    if (window.navigator.userAgent.match(/MSIE|Internet Explorer|Trident/i)) {
+        window.location = "microsoft-edge:" + window.location.href;
+        window.close();
+    }
+    </script>
     <script src="/js/m4a.js"></script>
   </head>
   <body>

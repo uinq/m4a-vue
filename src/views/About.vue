@@ -143,7 +143,7 @@ export default {
       }
       aboutTimer = setTimeout(function () {
         $this.artMove($this.getItemIdx())
-      }, 700)
+      }, 500)
     },
     goDown () {
       this.artMove(this.getItemIdx() + 1)
@@ -152,6 +152,9 @@ export default {
       this.artMove(this.getItemIdx() - 2)
     },
     animteScrollTo (_selector, _duration, _adjust) {
+      var timeout = null
+      window.removeEventListener('scroll', this.scrollEnd)
+      window.addEventListener('scroll', this.scrollEnd)
       const targetEle = document.querySelector(_selector)
       if (!targetEle) return
       _duration = 400
@@ -164,7 +167,6 @@ export default {
         const unitY = (targetY - currentY) / _duration
         const startTime = new Date().getTime()
         // const endTime = new Date().getTime() + _duration
-        var timeout = null
         const scrollTo = function () {
           const now = new Date().getTime()
           const passed = now - startTime

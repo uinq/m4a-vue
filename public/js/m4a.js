@@ -3,12 +3,6 @@
     var v = today.toISOString().slice(2,10).replace(/-/g,'')+ today.getDate() + today.getMinutes();
     document.write('<link rel="stylesheet" href="/css/m4a.css?v='+ v +'" />');
     document.write('<link rel="stylesheet" href="/css/m4a-design.css?'+ v +'" />');
-
-    // ie 에서 edge로 리다이렉트
-    if (window.navigator.userAgent.match(/MSIE|Internet Explorer|Trident/i)) {
-        window.location = "microsoft-edge:" + window.location.href;
-        window.close();
-    }
     document.addEventListener('DOMContentLoaded', () => {
         var os = "os_" + ua_result.os.name;
         var platform = ua_result.platform;

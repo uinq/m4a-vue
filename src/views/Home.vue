@@ -34,7 +34,7 @@
             </slot>
           </li>
           <li>
-            <a href="#" class="btn-all-project">VIEW <br class="pc-hide" /> ALL PROJECT</a>
+            <a href="/works/" class="btn-all-project">VIEW <br class="pc-hide" /> ALL PROJECT</a>
           </li>
         </ul>
       </div>
