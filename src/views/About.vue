@@ -143,7 +143,7 @@ export default {
       }
       aboutTimer = setTimeout(function () {
         $this.artMove($this.getItemIdx())
-      }, 500)
+      }, 400)
     },
     goDown () {
       this.artMove(this.getItemIdx() + 1)
