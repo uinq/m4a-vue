@@ -538,7 +538,8 @@ body.pc { min-height: 640px; }
   .about.contents .about-art3 .process .step4, .about.contents .about-art3 .process .step5 { margin-top: 30px; }
   .works-list-sec:before { height: 130px; }
   .works-list-sec:after { height: 120px; }
-  .works-list-sec .works-list-wrap { padding: 150px 50px 0px; } }
+  .works-list-sec .works-list-wrap { padding: 150px 50px 0px; }
+  .works-list-sec .item { width: calc(50vw - 85px); } }
 
 @media only screen and (max-width: 640px) { body { min-height: 640px; }
   .pc-hide { display: block; }
