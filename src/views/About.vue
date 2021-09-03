@@ -167,18 +167,25 @@ export default {
         const unitY = (targetY - currentY) / _duration
         const startTime = new Date().getTime()
         // const endTime = new Date().getTime() + _duration
+        var idx = 0
         const scrollTo = function () {
+          idx += 1
           const now = new Date().getTime()
           const passed = now - startTime
-          if (scrollEle.scrollTop < targetY && flag === 'down') {
-            scrollEle.scrollTop = currentY + (unitY * passed)
-            timeout = setTimeout(scrollTo, 0)
-          } else if (scrollEle.scrollTop > targetY && flag === 'up') {
-            scrollEle.scrollTop = currentY + (unitY * passed)
-            timeout = setTimeout(scrollTo, 0)
+          if (idx < 100) {
+            // console.log(idx)
+            if (scrollEle.scrollTop < targetY && flag === 'down') {
+              scrollEle.scrollTop = currentY + (unitY * passed)
+              timeout = setTimeout(scrollTo, 0)
+            } else if (scrollEle.scrollTop > targetY && flag === 'up') {
+              scrollEle.scrollTop = currentY + (unitY * passed)
+              timeout = setTimeout(scrollTo, 0)
+            } else {
+              clearTimeout(timeout)
+              // console.log('End off.')
+            }
           } else {
             clearTimeout(timeout)
-            // console.log('End off.')
           }
         }
         requestAnimationFrame(scrollTo)
