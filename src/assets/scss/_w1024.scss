@@ -59,4 +59,19 @@
     .item{width:calc(50vw - 85px);}
 
   }
+  //works
+  .works.contents{
+    .works-art1{
+      .sec1{height:50%;padding:200px 50px 0px;}
+      .info{left:50px;bottom:50%;margin-bottom:40px;}
+      .subject{height:100px;}
+      .sec2{height:50%}
+    }
+    .work-btm-fixed{height:40px;padding:0px 50px;background:rgba(255,255,255,0.2);text-shadow: 1px 1px 4px rgba(255,255,255,0.6);
+      .app-group{font-size:1.4rem;
+        .col{margin:0px 20px;}
+      }
+      .ctrl-group .list{margin:0px 20px;}
+    }
+  }
 }

@@ -4,7 +4,7 @@
   .pc-hide{display:block;}
   #header #logo{top:25px;left:60px;width:50px;height:20px;}
   #header .btn-nav{left:17px;top:26px;width:23px;height:14px;}
-  #header .btn-nav{left:13px;top:22px;width:31px;height:22px;}
+  #header .btn-nav{left:17px;top:22px;width:28px;height:20px;}
   #header .btn-nav:after,
   #header .btn-nav:before,
   #header .btn-nav span{height:2px;width:80%;left:2px;}
@@ -167,4 +167,21 @@
       }
     }
   }
+  //works
+  .works.contents{
+    .work-btm-fixed{height:60px;padding:0px 20px;z-index:21;background:rgba(255,255,255,0.3);
+      .app-group{flex:0.5}
+      .ctrl-group{flex:1.5;
+
+        .next{padding-right:15px;}
+        .prev{padding-left:15px;}
+      }
+      .app-group .app1,
+      .app-group .app2{width:20px;height:20px;background-size:15px 17px;background-position:center;padding:0;overflow:hidden;text-indent:-999px;}
+    }
+    .works-art1 .sec1{padding:100px 20px 0px;}
+    .works-art1 .sec2{min-height:0;}
+    .detail1 .works-art1 .img-sec{background:url(http://www.m4a.co.kr/m_2019/img/sub/myauto_launching.jpg) center bottom no-repeat;background-size:100% auto;}
+  }
+
 }
