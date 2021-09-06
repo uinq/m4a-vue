@@ -172,16 +172,30 @@
     .work-btm-fixed{height:60px;padding:0px 20px;z-index:21;background:rgba(255,255,255,0.3);
       .app-group{flex:0.5}
       .ctrl-group{flex:1.5;
-
         .next{padding-right:15px;}
         .prev{padding-left:15px;}
       }
       .app-group .app1,
       .app-group .app2{width:20px;height:20px;background-size:15px 17px;background-position:center;padding:0;overflow:hidden;text-indent:-999px;}
+      .app-group .col{margin:0 15px;}
     }
-    .works-art1 .sec1{padding:100px 20px 0px;}
-    .works-art1 .sec2{min-height:0;}
-    .detail1 .works-art1 .img-sec{background:url(http://www.m4a.co.kr/m_2019/img/sub/myauto_launching.jpg) center bottom no-repeat;background-size:100% auto;}
+    .works-art1 .subject{height:100%;}
+    .works-art1 .subject .tit{font-size:3.5rem;font-weight:900;
+      &:before,&:after{height:20px;width:1px;}
+    }
+    .works-art1 .subject .sub-txt{font-size:1.1rem;}
+    .works-art1 .subject .sub-txt span{min-width:0;}
+    .works-art1 .subject .sub-txt .plus{margin:0 10px;}
+    .works-art1 .info{font-size:1.2rem;left:20px;bottom:55%;margin-bottom:20px;}
+    .works-art1 .info b{width:60px;}
+    .works-art1 .info div + div{margin-top:5px;}
+    .works-art1 .sec1{padding:0px 20px 0px;height:45%}
+    .works-art1 .sec2{min-height:0;height:55%}
+    .detail1 .works-art1 .img-sec{background:url(http://www.m4a.co.kr/m_2019/img/sub/myauto_launching.jpg) center bottom no-repeat;background-size:cover}
+    .splide--ttb > .splide__pagination{right:10px;}
+    .splide--ttb > .splide__arrows .splide__arrow{right:3px;}
+    .splide--ttb > .splide__arrows .splide__arrow--prev{margin-top:-90px;}
+    .splide--ttb > .splide__arrows .splide__arrow--next{margin-top:50px;}
   }
 
 }
