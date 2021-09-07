@@ -46,45 +46,56 @@
         <div class="art-tpl">
           <div class="sec1">
             <h2 class="tit">SCREEN.</h2>
-            <div id="titGroup1">
-              <h3 class="tit1">빠른 무서류 대출</h3>
-              <p class="s-txt">견적부터 대출까지 간편하게 제공</p>
-            </div>
-            <div id="titGroup2">
-              <h3 class="tit1">자동차 구매 혜택</h3>
-              <p class="s-txt">낮은 금리와 다양한 헤택 제공</p>
-            </div>
-            <div id="titGroup3">
-              <h3 class="tit1">새로운 내 차 구매방법</h3>
-              <p class="s-txt">이자는 줄이고 혜택은 플러스</p>
-            </div>
-            <div id="titGroup4">
-              <h3 class="tit1">똑똑한 내 차 관리</h3>
-              <p class="s-txt">내 차 관련 다양한 관리기능 제공</p>
+            <div class="tit-group-wrap">
+              <div id="titGroup0" class="tit-group on">
+                <h3 class="tit1">빠른 <br /> 무서류 <br /> 대출</h3>
+                <p class="s-txt">견적부터 대출까지 간편하게 제공</p>
+              </div>
+              <div id="titGroup1" class="tit-group">
+                <h3 class="tit1">자동차 <br /> 구매 <br /> 혜택</h3>
+                <p class="s-txt">낮은 금리와 다양한 헤택 제공</p>
+              </div>
+              <div id="titGroup2" class="tit-group">
+                <h3 class="tit1">새로운 <br /> 내 차 <br /> 구매방법</h3>
+                <p class="s-txt">이자는 줄이고 혜택은 플러스</p>
+              </div>
+              <div id="titGroup3" class="tit-group">
+                <h3 class="tit1">똑똑한 <br /> 내 차 <br /> 관리</h3>
+                <p class="s-txt">내 차 관련 다양한 관리기능 제공</p>
+              </div>
             </div>
             <div class="paging"><span>3</span> <span>/</span> <span>3</span></div>
           </div>
           <div class="sec2">
-            <splide id="splide2" :options="options2" ref="spl1">
-              <splide-slide></splide-slide>
-              <splide-slide></splide-slide>
-              <splide-slide></splide-slide>
-              <splide-slide></splide-slide>
-            </splide>
-            <splide id="splide3" class="ddd" :options="options3" ref="spl2">
-              <splide-slide>
-                <p class="txt">견적부터 대출까지 간편하게 제공</p>
-              </splide-slide>
-              <splide-slide>
-                <p class="txt">낮은 금리와 다양한 헤택 제공</p>
-              </splide-slide>
-              <splide-slide>
-                <p class="txt">이자는 줄이고 혜택은 플러스</p>
-              </splide-slide>
-              <splide-slide>
-                <p class="txt">내 차 관련 다양한 관리기능 제공</p>
-              </splide-slide>
-            </splide>
+            <div class="splide2-wrap">
+              <splide id="splide2" class="splide2" :options="options2" ref="spl1">
+                <splide-slide><img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail01_mobile01.png" alt="견적부터 대출까지 간편하게 제공" /></splide-slide>
+                <splide-slide><img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail01_mobile02.png" alt="낮은 금리와 다양한 헤택 제공" /></splide-slide>
+                <splide-slide><img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail01_mobile03.png" alt="이자는 줄이고 혜택은 플러스" /></splide-slide>
+                <splide-slide><img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail01_mobile04.png" alt="내 차 관련 다양한 관리기능 제공" /></splide-slide>
+              </splide>
+            </div>
+            <div class="splide3-wrap">
+              <splide id="splide3" class="splide3" :options="options3" ref="spl2"
+              @splide:pagination:updated="paginationUpdated3">
+                <splide-slide>
+                  <p class="txt">견적부터 대출까지 간편하게 제공</p>
+                  <img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail01_pc01.png" alt="견적부터 대출까지 간편하게 제공" />
+                </splide-slide>
+                <splide-slide>
+                  <p class="txt">낮은 금리와 다양한 헤택 제공</p>
+                  <img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail01_pc02.png" alt="낮은 금리와 다양한 헤택 제공" />
+                </splide-slide>
+                <splide-slide>
+                  <p class="txt">이자는 줄이고 혜택은 플러스</p>
+                  <img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail01_pc03.png" alt="이자는 줄이고 혜택은 플러스" />
+                </splide-slide>
+                <splide-slide>
+                  <p class="txt">내 차 관련 다양한 관리기능 제공</p>
+                  <img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail01_pc04.png" alt="내 차 관련 다양한 관리기능 제공" />
+                </splide-slide>
+              </splide>
+            </div>
           </div>
         </div>
       </splide-slide>
@@ -100,6 +111,7 @@
         <a href="/works" class="list">list</a>
         <a href="/works/worksDetail1" class="next">NEXT</a>
       </div>
+       <div id="splideLine" class="splide-line"></div>
    </div>
 </section>
 </template>
@@ -122,18 +134,10 @@ export default {
         slideFocus: true
       },
       options2: {
-        perPage: 1
+        type: 'slide'
       },
       options3: {
-        type: 'slide',
-        width: 800,
-        gap: '1rem',
-        pagination: false,
-        fixedWidth: 110,
-        fixedHeight: 70,
-        cover: true,
-        focus: 'center',
-        isNavigation: true
+        perPage: 1
       }
     }
   },
@@ -147,6 +151,11 @@ export default {
     document.querySelector('address').classList.remove('hidden')
   },
   methods: {
+    paginationUpdated3 () {
+      var s3Idx = this.$refs.spl2.index
+      document.querySelector('.tit-group.on').classList.remove('on')
+      document.querySelector('#titGroup' + (s3Idx)).classList.add('on')
+    },
     mouseWheel (e) {
       if (e.deltaY < 0) {
         document.querySelector('#splide1').querySelectorAll('.splide__arrow--prev')[0].click()

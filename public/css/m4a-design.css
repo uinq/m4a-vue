@@ -504,15 +504,15 @@ body.pc { min-height: 640px; }
 
 .works.contents .art-tpl .sec1 .paging > span:nth-child(2) { margin: 0px 10px; }
 
-.works.contents .art-tpl .sec2 { flex: 1; position: relative; justify-content: flex-end; display: flex; flex-direction: column; }
+.works.contents .art-tpl .sec2 { flex: 1; position: relative; justify-content: flex-end; display: flex; flex-direction: column; padding-bottom: 20px; }
 
-.works.contents .art-tpl .sec2 .para-sec { font-size: 1.6rem; flex: 0.4; padding-top: 35px; box-sizing: border-box; }
+.works.contents .art-tpl .sec2 .para-sec { font-size: 1.6rem; flex: 0.4; padding-top: 35px; padding-bottom: 20px; box-sizing: border-box; }
 
 .works.contents .art-tpl .sec2 .img-sec { flex: 1.6; }
 
 .works.contents .art-tpl .sec2 .img-sec img { min-width: 600px; }
 
-.works.contents .work-btm-fixed { width: 100%; position: fixed; bottom: 0; left: 0; height: 80px; display: flex; box-sizing: border-box; padding: 0px 100px; justify-content: space-between; z-index: 3; background: rgba(255, 255, 255, 0.1); align-content: center; align-items: center; font-weight: 900; color: #000; transition: all .4s ease-in-out; }
+.works.contents .work-btm-fixed { width: 100%; position: fixed; bottom: 0; left: 0; height: 80px; display: flex; box-sizing: border-box; padding: 0px 100px; justify-content: space-between; z-index: 3; background: rgba(255, 255, 255, 0.1); align-content: center; align-items: center; font-weight: 900; color: #000; transition: all .4s ease-in-out; border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 .works.contents .work-btm-fixed:before { position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: rgba(255, 255, 255, 0.2); }
 
@@ -526,7 +526,7 @@ body.pc { min-height: 640px; }
 
 .works.contents .work-btm-fixed .app-group .app2 { padding-left: 22px; background: url(http://www.m4a.co.kr/m4a_2019/images/sub/logo_google_play.png) no-repeat 0 4px; }
 
-.works.contents .work-btm-fixed .app-group .col { width: 1px; height: 10px; color: transparent; overflow: hidden; position: relative; top: 0px; margin: 0px 40px; background: #000; line-height: 0; display: inline-block; }
+.works.contents .work-btm-fixed .app-group .col { width: 1px; height: 10px; color: transparent; overflow: hidden; position: relative; top: 0px; margin: 0px 40px; background: #000; line-height: 0; display: inline-block; transition: all .4s ease-in-out; }
 
 .works.contents .work-btm-fixed .ctrl-group { flex: 1; text-align: right; font-size: 1.4rem; }
 
@@ -570,13 +570,31 @@ body.pc { min-height: 640px; }
 
 .works.contents .works-art1 .sec2 { height: 63%; min-height: 408px; position: relative; }
 
-.works.contents .detail1 .works-art1 .img-sec { background: #2571cb url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail01.png) center -50px no-repeat; background-size: cover; }
+.works.contents .works-art4 .tit-group-wrap { position: relative; height: 190px; }
 
-.works.contents .detail1 .works-art1 .img-sec span { position: absolute; bottom: 0; left: 50%; }
+.works.contents .works-art4 .tit-group { position: absolute; top: 0; left: 0; z-index: 2; transition: all .4s ease-in-out; }
+
+.works.contents .works-art4 .tit1 { position: absolute; left: 0; top: 0; margin-top: 20px; opacity: 0; transition: all .4s ease-in-out; }
+
+.works.contents .works-art4 .s-txt { position: absolute; display: flex; left: 267px; top: -18px; height: 50px; padding: 0 30px; background: #000; border-radius: 15px; font-size: 14px; color: #fff; text-align: center; align-items: center; white-space: nowrap; margin-top: 0px; opacity: 0; transition: all .4s ease-in-out; }
+
+.works.contents .works-art4 .s-txt:after { position: absolute; left: 50%; top: 46px; width: 10px; height: 10px; background: #000; transform: rotate(45deg) translateX(-50%); }
+
+.works.contents .works-art4 .tit-group.on .tit1 { opacity: 1; margin-top: 0; }
+
+.works.contents .works-art4 .tit-group.on .s-txt { opacity: 1; animation-delay: 1.5s; animation: bounce 1s ease-in-out; }
+
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% { margin-top: 0px; }
+  40% { margin-top: -14px; }
+  60% { margin-top: -7px; } }
 
 .works.contents .splide__slide { height: 100vh; min-height: 680px; }
 
 .works.contents .splide__track { min-height: 680px; }
+
+.works.contents .splide__slide .splide__slide { height: auto; min-height: 0; }
+
+.works.contents .splide__slide .splide__track { min-height: 0px; }
 
 .works.contents .splide--ttb > .splide__arrows .splide__arrow { width: 30px; height: 40px; transform: translate(0); left: auto; right: 13px; bottom: auto; top: 50%; transition: all .4s ease-in-out; }
 
@@ -597,6 +615,34 @@ body.pc { min-height: 640px; }
 .works.contents .splide--ttb > .splide__arrows .splide__arrow--next { margin-top: 60px; }
 
 .works.contents .splide--ttb > .splide__arrows .splide__arrow svg { display: none; }
+
+.works.contents .splide-line { position: absolute; top: 1px; left: 0; width: 0%; height: 2px; background: #f37163; z-index: 5; }
+
+.works.contents .detail1 .works-art1 .img-sec { background: #2571cb url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail01.png) center -50px no-repeat; background-size: cover; }
+
+.works.contents .detail1 .works-art1 .img-sec span { position: absolute; bottom: 0; left: 50%; }
+
+.works.contents .detail1 .splide2-wrap { position: absolute; left: -80px; top: 50px; width: 225px; }
+
+.works.contents .detail1 .splide2-wrap:before { position: absolute; left: -14px; top: -14px; width: 253px; height: 515px; background: url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_device_mobile.png) no-repeat 0 0; z-index: 2; }
+
+.works.contents .detail1 #splide2 { height: auto; position: relative; z-index: 4; }
+
+.works.contents .detail1 .splide2-wrap:after { position: absolute; left: -74px; top: -40px; width: 375px; height: 651px; background: url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_device_mobile_shadow.png) no-repeat 0 0; }
+
+.works.contents .detail1 #splide2 .splide__arrows, .works.contents .detail1 #splide3 .splide__arrows, .works.contents .detail1 #splide2 .splide__pagination, .works.contents .detail1 #splide3 .splide__pagination { display: none; }
+
+.works.contents .detail1 .works-art4 .s-txt { left: 388px; top: -18px; transform: translateX(-50%); }
+
+.works.contents .detail1 .splide3-wrap { width: 880px; position: absolute; top: -10px; left: 220px; }
+
+.works.contents .detail1 .splide3-wrap:before { position: absolute; left: -23px; top: -24px; width: 925px; height: 586px; background: url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_device_pc.png) no-repeat 0 0; z-index: 2; }
+
+.works.contents .detail1 .splide3-wrap:after { position: absolute; left: -80px; top: -40px; width: 1037px; height: 707px; background: url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_device_pc_shadow.png) no-repeat 0 0; }
+
+.works.contents .detail1 .splide3-wrap .txt { position: absolute; }
+
+.works.contents .detail1 #splide3 { position: relative; z-index: 3; width: 100%; overflow: hidden; }
 
 @media only screen and (max-height: 640px) { body.pc #header #nav > ul { top: 180px; transform: translateY(0); }
   body.pc .m4a-wrap { min-height: 640px; position: relative; }
@@ -666,7 +712,9 @@ body.pc { min-height: 640px; }
   .works.contents .art-tpl .sec1 .paging { margin-top: 20px; font-size: 1.2rem; }
   .works.contents .art-tpl .sec1 .paging:after { display: none; }
   .works.contents .art-tpl .sec2 { flex: none; }
-  .works.contents .art-tpl .sec2 .para-sec { padding: 30px 0px 30px; } }
+  .works.contents .art-tpl .sec2 .para-sec { padding: 30px 0px 30px; }
+  .works.contents .splide--ttb > .splide__pagination { right: 12px; }
+  .works.contents .splide--ttb > .splide__arrows .splide__arrow { right: 5px; } }
 
 @media only screen and (max-width: 640px) { body { min-height: 640px; }
   .pc-hide { display: block; }
@@ -792,13 +840,20 @@ body.pc { min-height: 640px; }
   .works-list-sec .item { width: 100%; margin-bottom: 60px; }
   .works-list-sec .item .img-sec { height: auto; }
   .works-list-sec .item .img-sec img { width: 100%; }
-  .works.contents .work-btm-fixed { height: 60px; padding: 0px 20px; z-index: 21; background: rgba(255, 255, 255, 0.3); }
-  .works.contents .work-btm-fixed .app-group { flex: 0.5; }
-  .works.contents .work-btm-fixed .ctrl-group { flex: 1.5; }
-  .works.contents .work-btm-fixed .ctrl-group .next { padding-right: 15px; }
-  .works.contents .work-btm-fixed .ctrl-group .prev { padding-left: 15px; }
+  .works.contents .art-tpl { padding: 80px 0px 0px; margin: 0px 20px; display: block; box-sizing: border-box; height: auto; }
+  .works.contents .art-tpl .sec1 .tit { font-size: 1.2rem; }
+  .works.contents .art-tpl .sec1 .tit1 { font-size: 2.8rem; }
+  .works.contents .art-tpl .sec1 .tit1 br { display: block; }
+  .works.contents .art-tpl .sec2 .para-sec { font-size: 1.4rem; }
+  .works.contents .art-tpl .sec2 .img-sec img { min-width: 0; }
+  .works.contents .work-btm-fixed { height: 60px; padding: 0px 20px; z-index: 21; background: rgba(255, 255, 255, 0.2); }
+  .works.contents .work-btm-fixed .app-group { flex: 0.6; }
+  .works.contents .work-btm-fixed .ctrl-group { flex: 1.4; font-weight: 900; font-size: 1.2rem; }
+  .works.contents .work-btm-fixed .ctrl-group .next { padding-right: 20px; }
+  .works.contents .work-btm-fixed .ctrl-group .prev { padding-left: 20px; }
+  .works.contents .work-btm-fixed .ctrl-group .list { margin: 0 20px; }
   .works.contents .work-btm-fixed .app-group .app1, .works.contents .work-btm-fixed .app-group .app2 { width: 20px; height: 20px; background-size: 15px 17px; background-position: center; padding: 0; overflow: hidden; text-indent: -999px; }
-  .works.contents .work-btm-fixed .app-group .col { margin: 0 15px; }
+  .works.contents .work-btm-fixed .app-group .col { margin: 0 20px; }
   .works.contents .works-art1 .subject { height: 100%; }
   .works.contents .works-art1 .subject .tit { font-size: 3.5rem; font-weight: 900; }
   .works.contents .works-art1 .subject .tit:before, .works.contents .works-art1 .subject .tit:after { height: 20px; width: 1px; }
@@ -811,7 +866,7 @@ body.pc { min-height: 640px; }
   .works.contents .works-art1 .sec1 { padding: 0px 20px 0px; height: 45%; }
   .works.contents .works-art1 .sec2 { min-height: 0; height: 55%; }
   .works.contents .detail1 .works-art1 .img-sec { background: url(http://www.m4a.co.kr/m_2019/img/sub/myauto_launching.jpg) center bottom no-repeat; background-size: cover; }
-  .works.contents .splide--ttb > .splide__pagination { right: 10px; }
-  .works.contents .splide--ttb > .splide__arrows .splide__arrow { right: 3px; }
+  .works.contents .splide--ttb > .splide__pagination { right: 10px; display: none; }
+  .works.contents .splide--ttb > .splide__arrows .splide__arrow { right: 3px; display: none; }
   .works.contents .splide--ttb > .splide__arrows .splide__arrow--prev { margin-top: -90px; }
   .works.contents .splide--ttb > .splide__arrows .splide__arrow--next { margin-top: 50px; } }
