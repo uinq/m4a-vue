@@ -1,6 +1,6 @@
 <template>
   <section id="contents" class="works contents">
-    <splide id="splide1" :options="options" class="works-art-wrap detail1">
+    <splide id="splide1" ref="spl0"  :options="options" class="works-art-wrap detail1">
       <splide-slide class="works-art1">
         <div class="sec1">
           <div class="subject">
@@ -157,10 +157,20 @@ export default {
       document.querySelector('#titGroup' + (s3Idx)).classList.add('on')
     },
     mouseWheel (e) {
-      if (e.deltaY < 0) {
+      if (this.$refs.spl0.index === this.$refs.spl0.length - 1 && e.deltaY < 0 && this.$refs.spl2.index === 0) {
         document.querySelector('#splide1').querySelectorAll('.splide__arrow--prev')[0].click()
-      } else if (e.deltaY > 0) {
-        document.querySelector('#splide1').querySelectorAll('.splide__arrow--next')[0].click()
+      } else if (this.$refs.spl0.index < this.$refs.spl0.length - 1) {
+        if (e.deltaY < 0) {
+          document.querySelector('#splide1').querySelectorAll('.splide__arrow--prev')[0].click()
+        } else if (e.deltaY > 0) {
+          document.querySelector('#splide1').querySelectorAll('.splide__arrow--next')[0].click()
+        }
+      } else if (this.$refs.spl0.index === this.$refs.spl0.length - 1) {
+        if (e.deltaY < 0) {
+          document.querySelector('#splide3').querySelectorAll('.splide__arrow--prev')[0].click()
+        } else if (e.deltaY > 0) {
+          document.querySelector('#splide3').querySelectorAll('.splide__arrow--next')[0].click()
+        }
       }
     }
   }
