@@ -14,7 +14,7 @@
           <span  class="txt2">{{slide.ptn}}</span>
         </div>
         <div class="contract"><span>{{slide.prj}} {{slide.prj2}}</span></div>
-        <div class="detail" v-if="slide.url != 'none'" ><a :href="slide.url">VIEW MORE</a></div>
+        <div class="detail" v-if="slide.url != 'none'" ><a :href="slide.url" role="button">VIEW MORE</a></div>
       </div>
     </splide-slide>
     </slot>

@@ -89,7 +89,7 @@
   #homeSwiper .splide .splide__pagination{position:absolute;bottom:3px;height:2px;z-index:3;}
   #homeSwiper .splide .splide__pagination > li{line-height:0;}
   #homeSwiper .splide .splide__pagination .splide__pagination__page{opacity:0.7;height:2px;}
-  #homeSwiper .splide .pagiation-num{opacity:0;}
+  #homeSwiper .splide .pagiation-num{opacity:0;display:none;}
   #homeSwiper .splide .splide__autoplay{right:10px;bottom:10px;}
   #homeSwiper .splide .splide__slider .splide__track .splide__list .splide__slide:before{opacity:0;}
   #homeSwiper .splide .splide__slider .splide__track .splide__list .splide__slide{background-size:100% auto; background-position:center bottom;position:relative;opacity:1;height:0;padding-top:11.853%}
