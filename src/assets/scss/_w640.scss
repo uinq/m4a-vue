@@ -193,6 +193,9 @@
     .works-art1 .subject .tit{font-size:3.5rem;font-weight:900;
       &:before,&:after{height:20px;width:1px;}
     }
+    .works-art1 .subject .tit{line-height:1.2;display:block;font-size:2.8rem;padding:0px 12%;}
+    .works-art1 .subject .tit:before{left: 8%;;margin-top:-5px;}
+    .works-art1 .subject .tit:after{right:9%;margin-top:-5px;}
     .works-art1 .subject .sub-txt{font-size:1.1rem;}
     .works-art1 .subject .sub-txt span{min-width:0;}
     .works-art1 .subject .sub-txt .plus{margin:0 10px;}
@@ -216,8 +219,6 @@
     .detail1 .splide3-wrap .splide{border:1px solid #efefef;}
     .detail1 .works-art4 .s-txt {left:50vw;top:195px;}
 
-    .detail2 .works-art1 .img-sec.prj2{background: #f0f1f6 url(	http://www.m4a.co.kr/m_2019/img/sub/hanamembers_launching.jpg) center bottom no-repeat;background-size: cover;}
-
     .detail2 .works-art4 .sec2 .bg{left:60px;width:150px;height:309px;border-radius:22px;top:55px;}
     .detail2 .splide4-wrap{width:135px;padding:8px;border-radius:22px;}
     .detail2 .splide4-wrap .splide__track:before{padding:8px;left:-9px;top:-8px;}
@@ -227,6 +228,10 @@
     .detail2 .works-art4 .splide__pagination{bottom:-9px}
     .detail2 .splide4 .splide__arrows{display:none;}
     .detail2 .works-art4 .symbol{left:-3px;top:280px;width:70px;}
-  }
 
+    .detail2 .works-art1 .img-sec.prj2{background: #f0f1f6 url(http://www.m4a.co.kr/m_2019/img/sub/hanamembers_launching.jpg) center bottom no-repeat;background-size: cover;}
+    .detail1 .works-art1 .img-sec.prj3{background: url(http://www.m4a.co.kr/m_2019/img/sub/shinhancardMtn_launching.jpg) center bottom no-repeat;background-size: cover;}
+    .detail2 .works-art1 .img-sec.prj4 {background: #86c url(http://www.m4a.co.kr/m_2019/img/sub/selfbank_launching.jpg) center bottom no-repeat;background-size: cover;}
+    .detail2 .works-art1 .img-sec.prj5 {background:url(http://www.m4a.co.kr/m_2019/img/sub/shinhanrenewal_launching.jpg) center bottom no-repeat;background-size: cover;}
+  }
 }
