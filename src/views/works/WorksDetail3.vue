@@ -5,7 +5,7 @@
         <div class="sec1">
           <div class="subject">
             <div class="pos-a">
-              <h1 class="tit">ShinhanCard OLINE Maintenance</h1>
+              <h1 class="tit">ShinhanCard ONLINE Maintenance</h1>
               <p class="sub-txt"><span>PARTNER</span> <span class="plus">+</span> <span>신한카드</span></p>
             </div>
           </div>
