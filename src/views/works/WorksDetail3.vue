@@ -10,7 +10,7 @@
             </div>
           </div>
           <div class="info">
-            <div class="date"><b>DATE.</b> 2016 - 2021 F/W</div>
+            <div class="date"><b>DATE.</b> 2016 ~ 현재 진행중</div>
             <div class="output"><b>OUTPUT.</b> PC WEB / MOBILE WEB / MOBILE APP.</div>
           </div>
         </div>
