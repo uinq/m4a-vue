@@ -1,6 +1,6 @@
 (function () {
     const today= new Date();
-    var v = today.toISOString().slice(2,10).replace(/-/g,'')+ today.getDate() + today.getMinutes();
+    var v = today.toISOString().slice(2,10).replace(/-/g,'')+ today.getMinutes();
     document.write('<link rel="stylesheet" href="/css/m4a.css?v='+ v +'" />');
     document.write('<link rel="stylesheet" href="/css/m4a-design.css?'+ v +'" />');
     document.addEventListener('DOMContentLoaded', () => {

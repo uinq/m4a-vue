@@ -7,7 +7,7 @@
         <p class="brochure"><a class="com-brochure" href="http://www.m4a.co.kr/upload/brochure/M4A_Brochure_2018_01.pdf" target="_blank" title="새창">COMPANY BROCHURE</a></p>
       </div>
       <div class="home-view-more">
-        <a href="#homeMore" class="btn-home-more">VIEW MORE? <br /> THEN, <br /> SCROLL DOWN <span class="hidden"><br /> or <br /> ↓ ARROW.</span></a>
+        <a href="#homeMore" class="btn-home-more"  @click="homeMore('on')">VIEW MORE? <br /> THEN, <br /> SCROLL DOWN <span class="hidden"><br /> or <br /> ↓ ARROW.</span></a>
         <div class="ani-arrow"></div>
       </div>
     </article>
@@ -38,18 +38,21 @@
           </li>
         </ul>
       </div>
+      <button class="btn-more-close" @click="homeMore('off')">닫기</button>
     </article>
   </section>
+  <Popup />
 </template>
 
 <script>
 import HomeSwiper from '@/components/home/HomeSwiper.vue'
 import { prjList } from '@/components/home/HomeData.json'
-var ts, te // 터치미벤트 변수
+import Popup from '@/components/popup.vue'
+var ts, te // 터치이벤트 변수
 export default {
   name: 'Home',
   components: {
-    HomeSwiper
+    HomeSwiper, Popup
   },
   data () {
     return {
@@ -73,6 +76,9 @@ export default {
     this.touchHandler('destroy')
   },
   methods: {
+    homeMore (f) {
+      f === 'on' ? document.querySelector('#m4aVueApp').classList.add('white-mode') : document.querySelector('#m4aVueApp').classList.remove('white-mode')
+    },
     whiteMode (e) {
       if (e.deltaY < 0 || e.keyCode === 38) {
         document.querySelector('#m4aVueApp').classList.remove('white-mode')

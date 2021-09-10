@@ -42,7 +42,7 @@
           </div>
         </div>
       </splide-slide>
-      <splide-slide class="works-art4">
+      <splide-slide class="works-art4 type1">
         <div class="art-tpl">
           <div class="sec1">
             <h2 class="tit">SCREEN.</h2>
@@ -81,6 +81,46 @@
           </div>
         </div>
       </splide-slide>
+      <splide-slide class="works-art4 type2 fan">
+        <div class="art-tpl">
+          <div class="sec1">
+            <h2 class="tit">SCREEN.</h2>
+            <div class="tit-group-wrap">
+              <div id="titGroup0" class="tit-group on">
+                <h3 class="tit1">신한 <br> 페이판 <br> APP</h3>
+                <p class="s-txt">카드 서비스 조회, 신청, 혜택 등 제공</p>
+              </div>
+              <div id="titGroup1" class="tit-group">
+                <h3 class="tit1">신한 <br> 페이판 <br> APP</h3>
+                <p class="s-txt">새로워진 쇼핑 트렌드 제공</p>
+              </div>
+              <div id="titGroup2" class="tit-group">
+                <h3 class="tit1">새롭게 <br> 추가 된 <br> 인증 방식</h3>
+                <p class="s-txt">사용자가 편리한 방법을 선택할 수 있도록 제공</p>
+              </div>
+              <div id="titGroup3" class="tit-group">
+                <h3 class="tit1">신청 <br> 이어하기 <br> 서비스</h3>
+                <p class="s-txt">신청단계를 이어서 진행이 가능하도록 서비스를 구축</p>
+              </div>
+            </div>
+            <div class="paging"><span>4</span> <span>/</span> <span>4</span></div>
+          </div>
+          <div class="sec2">
+            <div class="bg"></div>
+            <div class="symbol"><img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail04_3.png" alt=""></div>
+            <div class="raoud-overflow">
+              <div class="splide4-wrap">
+                <splide id="splide4" class="splide4" :options="options4" @splide:pagination:updated="paginationUpdated4" ref="spl4" >
+                  <splide-slide><img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail05_mobile03.png" alt="카드 서비스 조회, 신청, 혜택 등 제공" /></splide-slide>
+                  <splide-slide><img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail05_mobile04.png" alt="새로워진 쇼핑 트렌드 제공" /></splide-slide>
+                  <splide-slide><img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail05_mobile05.png" alt="사용자가 편리한 방법을 선택할 수 있도록 제공" /></splide-slide>
+                  <splide-slide><img src="http://www.m4a.co.kr/m4a_2019/images/sub/img_work_detail05_mobile06.png" alt="신청단계를 이어서 진행이 가능하도록 서비스를 구축" /></splide-slide>
+                </splide>
+              </div>
+            </div>
+          </div>
+        </div>
+      </splide-slide>
    </splide>
    <div class="work-btm-fixed">
       <div class="app-group">
@@ -93,7 +133,7 @@
         <a href="/works" class="list">list</a>
         <a href="/works/worksDetail4" class="next">NEXT</a>
       </div>
-       <div id="splideLine" class="splide-line"></div>
+      <div id="splideLine" class="splide-line"></div>
    </div>
 </section>
 </template>
@@ -120,6 +160,11 @@ export default {
       },
       options3: {
         perPage: 1
+      },
+      options4: {
+        type: 'loop',
+        perPage: 1,
+        rewind: true
       }
     }
   },
@@ -133,6 +178,12 @@ export default {
     document.querySelector('address').classList.remove('hidden')
   },
   methods: {
+    paginationUpdated4 () {
+      var s3Idx = this.$refs.spl4.index
+      document.querySelector('.fan .tit-group.on').classList.remove('on')
+      document.querySelector('.fan #titGroup' + (s3Idx)).classList.add('on')
+      document.querySelector('#splideLine').style.width = this.$refs.spl4.index + (this.$refs.spl4.index * Math.ceil(100 / (this.$refs.spl4.length - 1))) + '%'
+    },
     paginationUpdated3 () {
       var s3Idx = this.$refs.spl2.index
       document.querySelector('.tit-group.on').classList.remove('on')
@@ -140,8 +191,24 @@ export default {
       document.querySelector('#splideLine').style.width = this.$refs.spl2.index + (this.$refs.spl2.index * Math.ceil(100 / (this.$refs.spl2.length - 1))) + '%'
     },
     mouseWheel (e) {
-      if (this.$refs.spl0.index === this.$refs.spl0.length - 1 && e.deltaY < 0 && this.$refs.spl2.index === 0) {
+      if (this.$refs.spl0.index === this.$refs.spl0.length - 1 && e.deltaY < 0 && this.$refs.spl4.index === 0) {
         document.querySelector('#splide1').querySelectorAll('.splide__arrow--prev')[0].click()
+      } else if (this.$refs.spl0.index === this.$refs.spl0.length - 2 && e.deltaY < 0 && this.$refs.spl2.index === 0) {
+        document.querySelector('#splide1').querySelectorAll('.splide__arrow--prev')[0].click()
+      } else if (this.$refs.spl0.index === this.$refs.spl0.length - 2 && e.deltaY > 0 && this.$refs.spl2.index === 1) {
+        document.querySelector('#splide1').querySelectorAll('.splide__arrow--next')[0].click()
+      } else if (this.$refs.spl0.index < this.$refs.spl0.length - 2) {
+        if (e.deltaY < 0) {
+          document.querySelector('#splide1').querySelectorAll('.splide__arrow--prev')[0].click()
+        } else if (e.deltaY > 0) {
+          document.querySelector('#splide1').querySelectorAll('.splide__arrow--next')[0].click()
+        }
+      } else if (this.$refs.spl0.index === this.$refs.spl0.length - 2) {
+        if (e.deltaY < 0) {
+          document.querySelector('#splide3').querySelectorAll('.splide__arrow--prev')[0].click()
+        } else if (e.deltaY > 0) {
+          document.querySelector('#splide3').querySelectorAll('.splide__arrow--next')[0].click()
+        }
       } else if (this.$refs.spl0.index < this.$refs.spl0.length - 1) {
         if (e.deltaY < 0) {
           document.querySelector('#splide1').querySelectorAll('.splide__arrow--prev')[0].click()
@@ -150,9 +217,9 @@ export default {
         }
       } else if (this.$refs.spl0.index === this.$refs.spl0.length - 1) {
         if (e.deltaY < 0) {
-          document.querySelector('#splide3').querySelectorAll('.splide__arrow--prev')[0].click()
+          document.querySelector('#splide4').querySelectorAll('.splide__arrow--prev')[0].click()
         } else if (e.deltaY > 0) {
-          document.querySelector('#splide3').querySelectorAll('.splide__arrow--next')[0].click()
+          document.querySelector('#splide4').querySelectorAll('.splide__arrow--next')[0].click()
         }
       }
     }

@@ -1,6 +1,6 @@
 <template>
   <section id="contents" class="works contents">
-    <splide id="splide1" ref="spl0"  :options="options" class="works-art-wrap detail2">
+    <splide id="splide1" ref="spl0"  :options="options" class="works-art-wrap detail1">
       <splide-slide class="works-art1">
         <div class="sec1">
           <div class="subject">
@@ -42,7 +42,7 @@
           </div>
         </div>
       </splide-slide>
-      <splide-slide class="works-art4">
+      <splide-slide class="works-art4 type2">
         <div class="art-tpl">
           <div class="sec1">
             <h2 class="tit">SCREEN.</h2>

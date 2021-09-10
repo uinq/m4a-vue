@@ -32,6 +32,9 @@
     "sass-loader": "^8.0.2"
   },
   "eslintConfig": {
+    "globals": {
+      "kakao": false
+    },
     "root": true,
     "env": {
       "node": true
