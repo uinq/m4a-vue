@@ -1,7 +1,7 @@
 터미널
 맥북 iTerm2
 
-https://git-scm.com/download/win> 깃 다운로드
+https://git-scm.com/download/> 깃 다운로드
 https://www.sourcetreeapp.com/ > 소스트리 다운로드
 
 //기본 CMD 명령어
@@ -21,10 +21,10 @@ git config --list
 git config --global -e
 
 //이름설정
-git config --global user.name "ingHome"
+git config --global user.name "이름"
 
 //이메일 설정
-git config --global use.email "lovebites444@gmail.com
+git config --global use.email "이메일"
 
 //맥과 윈도우 공백제거후 업로드
 git config --global core.autocrlf true   // win
@@ -84,13 +84,12 @@ VS Code를 Git 외부 편집기로 사용할때 편합니다. --diff 옵션을 �
 git difftool
 
 //git 허브와 연결
-git remote add origin https://github.com/uinq/m4a-vue.git
-
+git remote add origin 깃허브URL
 //원격저장소에 push
 git push origin master
 
 //원격저장소에서 내려받기(init전)
-git clone https://github.com/uinq/m4a-vue.git .  < .주의
+git clone 깃허브 URL .  < .주의
 
 //원격저장소에서 pull
 git pull origin master

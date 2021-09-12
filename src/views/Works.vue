@@ -54,7 +54,7 @@ export default {
     }
   },
   mounted () {
-    setTimeout(this.masonry, 100)
+    setTimeout(this.masonry, 500)
   },
   unmounted () {
   },
