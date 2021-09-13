@@ -68,6 +68,7 @@ export default {
         fitWidth: true,
         horizontalOrder: true
       })
+
       console.log()
       var elem2 = document.querySelector('#masonry2')
       var msnry2 = new Masonry(elem2, {
@@ -77,6 +78,8 @@ export default {
         fitWidth: true
       })
       console.log(msnry1 + '' + msnry2)
+      elem1.classList.add('on')
+      elem2.classList.add('on')
     }
   }
 }
