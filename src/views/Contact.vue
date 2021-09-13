@@ -38,27 +38,26 @@ export default {
   },
   methods: {
     initMap () {
-      var mapContainer = document.getElementById('m4aMap') // 지도를 표시할 div
+      var mapContainer = document.getElementById('m4aMap')
       var mapOption = {
-        center: new kakao.maps.LatLng(37.50968, 127.01715), // 지도의 중심좌표
-        level: 2 // 지도의 확대 레벨
+        center: new kakao.maps.LatLng(37.50968, 127.01715), // 지도 중심좌표
+        level: 2 // 지도 확대 레벨
       }
       var map = new kakao.maps.Map(mapContainer, mapOption)
-      var imageSrc = '/images/mapin.png' // 마커이미지의 주소입니다
-      var imageSize = new kakao.maps.Size(68, 24) // 마커이미지의 크기입니다
-      var imageOption = { offset: new kakao.maps.Point(2, 26) } // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-
-      // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+      var imageSrc = '/images/mapin.png' // 마커이미지 주소
+      var imageSize = new kakao.maps.Size(68, 24) // 마커이미지 크기
+      var imageOption = { offset: new kakao.maps.Point(2, 26) } // 마커이미지 좌표
+      //  마커이미지 생성
       var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
       var markerPosition = new kakao.maps.LatLng(37.50960, 127.01720)
-      // 마커를 생성합니다
+      // 마커 생성
       var marker = new kakao.maps.Marker({
         position: markerPosition,
         image: markerImage
       })
-      // 마커가 지도 위에 표시되도록 설정합니다
+      // 마커표시
       marker.setMap(map)
-      // dd
+      // 센터 위치 리로드
       function reLay () {
         map.relayout()
       }
