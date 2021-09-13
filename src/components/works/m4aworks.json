@@ -12,7 +12,7 @@
           "date" : "2018 F/W",
           "kind" : "PC WEB / MOBILE WEB / HYBRID APP.",
           "img" : "http://www.m4a.co.kr/m4a_2019/images/sub/img_work_list01.png",
-          "url" : "/works/worksDetail1"
+          "url" : "/worksDetail1"
         },
         {
           "cls" : "n2",
@@ -23,14 +23,14 @@
           "date" : "2018 S/S",
           "kind" : "MOBILE APP.",
           "img" : "http://www.m4a.co.kr/m4a_2019/images/sub/img_work_list02.png",
-          "url" : "/works/worksDetail2"
+          "url" : "/worksDetail2"
         },
         {
           "cls" : "n3",
           "type" : "type2",
           "ptn" : "신한카드",
           "name" : "ShinhanCard ONLINE CHANNEL MAINTENANCE",
-          "url" : "/works/worksDetail3"
+          "url" : "/worksDetail3"
         },
         {
           "cls" : "n4",
@@ -48,7 +48,7 @@
           "date" : "2017 F/W",
           "kind" : "MOBILE APP.",
           "img" : "http://www.m4a.co.kr/m4a_2019/images/sub/img_work_list04.png",
-          "url" : "/works/worksDetail4"
+          "url" : "/worksDetail4"
         },
         {
           "cls" : "n6",
@@ -64,7 +64,7 @@
           "date" : "2017 S/S",
           "kind" : "MOBILE WEB / MOBILE APP.",
           "img" : "http://www.m4a.co.kr/m4a_2019/images/sub/img_work_list06.png",
-          "url" : "/works/worksDetail5"
+          "url" : "/worksDetail5"
         },
         {
           "cls" : "n8",

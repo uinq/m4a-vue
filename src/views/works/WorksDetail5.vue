@@ -90,9 +90,9 @@
         <a href="https://play.google.com/store/apps/details?id=com.shinhancard.smartshinhan" class="app2" target="_blank" title="새창">GOOGLE PLAY</a>
       </div>
       <div class="ctrl-group">
-        <a href="/works/worksDetail4" class="prev">PREV</a>
+        <a href="/worksDetail4" class="prev">PREV</a>
         <a href="/works" class="list">list</a>
-        <a href="/works/worksDetail1" class="next">NEXT</a>
+        <a href="/worksDetail1" class="next">NEXT</a>
       </div>
        <div id="splideLine" class="splide-line"></div>
    </div>

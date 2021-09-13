@@ -1,12 +1,12 @@
 {
   "prjList":
   [
-    {"mslide":"Y","cls":"prj-item1","ptn":"신한카드","prj":"MyAUTO","prj2":"RENEWAL","url":"/works/worksDetail1"},
-    {"mslide":"Y","cls":"prj-item2","ptn":"신한카드","prj":"ONLINE CHANNEL MAINTENANCE","prj2":"","url":"/works/worksDetail3"},
-    {"mslide":"Y","cls":"prj-item3","ptn":"신한카드","prj":"ShinhanCard MOBILE","prj2":"RENEWAL","url":"/works/worksDetail5"},
+    {"mslide":"Y","cls":"prj-item1","ptn":"신한카드","prj":"MyAUTO","prj2":"RENEWAL","url":"/worksDetail1"},
+    {"mslide":"Y","cls":"prj-item2","ptn":"신한카드","prj":"ONLINE CHANNEL MAINTENANCE","prj2":"","url":"/worksDetail3"},
+    {"mslide":"Y","cls":"prj-item3","ptn":"신한카드","prj":"ShinhanCard MOBILE","prj2":"RENEWAL","url":"/worksDetail5"},
     {"mslide":"Y","cls":"prj-item4","ptn":"KEB하나은행","prj":"KEB Hana Bank MAINTENANCE","prj2":"","url":"none"},
-    {"mslide":"Y","cls":"prj-item5","ptn":"하나카드","prj":"HANA MEMBERS APP","prj2":"RENEWAL","url":"/works/worksDetail2"},
-    {"mslide":"Y","cls":"prj-item6","ptn":"SC제일은행","prj":"SELF BANK APP","prj2":"LAUNCHING","url":"/works/worksDetail4"},
+    {"mslide":"Y","cls":"prj-item5","ptn":"하나카드","prj":"HANA MEMBERS APP","prj2":"RENEWAL","url":"/worksDetail2"},
+    {"mslide":"Y","cls":"prj-item6","ptn":"SC제일은행","prj":"SELF BANK APP","prj2":"LAUNCHING","url":"/worksDetail4"},
     {"mslide":"N","cls":"prj-item7","ptn":"SC제일은행","prj":"DIGITAL COUNTER","prj2":"","url":"none"}
   ]
 }

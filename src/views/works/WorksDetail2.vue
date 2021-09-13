@@ -89,9 +89,9 @@
         <a href="https://play.google.com/store/apps/details?id=kr.co.hanamembers.hmscustomer" class="app2" target="_blank" title="새창">GOOGLE PLAY</a>
       </div>
       <div class="ctrl-group">
-        <a href="/works/worksDetail1" class="prev">PREV</a>
+        <a href="/worksDetail1" class="prev">PREV</a>
         <a href="/works" class="list">list</a>
-        <a href="/works/worksDetail3" class="next">NEXT</a>
+        <a href="/worksDetail3" class="next">NEXT</a>
       </div>
        <div id="splideLine" class="splide-line"></div>
    </div>

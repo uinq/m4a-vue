@@ -31,27 +31,27 @@ const routes = [
     component: Works
   },
   {
-    path: '/works/worksDetail1',
+    path: '/worksDetail1',
     name: 'WorksDetail1',
     component: WorksDetail1
   },
   {
-    path: '/works/worksDetail2',
+    path: '/worksDetail2',
     name: 'WorksDetail2',
     component: WorksDetail2
   },
   {
-    path: '/works/worksDetail3',
+    path: '/worksDetail3',
     name: 'WorksDetail3',
     component: WorksDetail3
   },
   {
-    path: '/works/worksDetail4',
+    path: '/worksDetail4',
     name: 'WorksDetail4',
     component: WorksDetail4
   },
   {
-    path: '/works/worksDetail5',
+    path: '/worksDetail5',
     name: 'WorksDetail5',
     component: WorksDetail5
   }

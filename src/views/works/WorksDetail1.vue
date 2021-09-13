@@ -107,9 +107,9 @@
         <a href="https://play.google.com/store/apps/details?id=com.shinhancard.autoplatform" class="app2" target="_blank" title="새창">GOOGLE PLAY</a>
       </div>
       <div class="ctrl-group">
-        <a href="/works/worksDetail5" class="prev">PREV</a>
+        <a href="/worksDetail5" class="prev">PREV</a>
         <a href="/works" class="list">list</a>
-        <a href="/works/worksDetail2" class="next">NEXT</a>
+        <a href="/worksDetail2" class="next">NEXT</a>
       </div>
        <div id="splideLine" class="splide-line"></div>
    </div>
