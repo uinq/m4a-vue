@@ -65,8 +65,7 @@ export default {
         // options
         itemSelector: '.item',
         gutter: 50,
-        fitWidth: true,
-        horizontalOrder: true
+        fitWidth: true
       })
 
       console.log()

@@ -5,21 +5,21 @@
 
 @font-face { font-family: Roboto; font-weight: 700; src: local(※), url(/fonts/Roboto-Bold.woff) format("woff"); }
 
-@font-face { font-family: 'NanumSquareRound'; font-weight: 100; src: url(/fonts//NanumSquareRoundL.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundL.woff) format("woff"); }
+@font-face { font-family: 'NanumSquareRound'; font-weight: 100; src: url(/fonts/NanumSquareRoundL.woff2) format("woff2"), url(/fonts/NanumSquareRoundL.woff) format("woff"); }
 
-@font-face { font-family: 'NanumSquareRound'; font-weight: 400; src: url(/fonts//NanumSquareRoundR.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundR.woff) format("woff"); }
+@font-face { font-family: 'NanumSquareRound'; font-weight: 400; src: url(/fonts/NanumSquareRoundR.woff2) format("woff2"), url(/fonts/NanumSquareRoundR.woff) format("woff"); }
 
-@font-face { font-family: 'NanumSquareRound'; font-weight: 700; src: url(/fonts//NanumSquareRoundB.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundB.woff) format("woff"); }
+@font-face { font-family: 'NanumSquareRound'; font-weight: 700; src: url(/fonts//NanumSquareRoundB.woff2) format("woff2"), url(/fonts/NanumSquareRoundB.woff) format("woff"); }
 
-@font-face { font-family: 'NanumSquareRound'; font-weight: 900; src: url(/fonts//NanumSquareRoundEB.woff2) format("woff2"), url(/fonts/d/NanumSquareRoundEB.woff) format("woff"); }
+@font-face { font-family: 'NanumSquareRound'; font-weight: 900; src: url(/fonts/NanumSquareRoundEB.woff2) format("woff2"), url(/fonts/NanumSquareRoundEB.woff) format("woff"); }
 
-@font-face { font-family: 'NanumSquare'; font-weight: 100; src: url(/fonts/d/NanumSquareL.woff) format("woff"); }
+@font-face { font-family: 'NanumSquare'; font-weight: 100; src: url(/fonts/NanumSquareL.woff) format("woff"); }
 
-@font-face { font-family: 'NanumSquare'; font-weight: 400; src: url(/fonts/d/NanumSquareR.woff) format("woff"); }
+@font-face { font-family: 'NanumSquare'; font-weight: 400; src: url(/fonts/NanumSquareR.woff) format("woff"); }
 
-@font-face { font-family: 'NanumSquare'; font-weight: 700; src: url(/fonts/d/NanumSquareB.woff) format("woff"); }
+@font-face { font-family: 'NanumSquare'; font-weight: 700; src: url(/fonts/NanumSquareB.woff) format("woff"); }
 
-@font-face { font-family: 'NanumSquareR'; font-weight: 900; src: url(/fonts/d/NanumSquareEB.woff) format("woff"); }
+@font-face { font-family: 'NanumSquareR'; font-weight: 900; src: url(/fonts/NanumSquareEB.woff) format("woff"); }
 
 #skipNav { position: absolute; top: 0; left: 0; width: 100%; }
 
@@ -37,7 +37,7 @@ body.pc { min-height: 640px; }
 
 #header #logo { width: 80px; height: 25px; position: absolute; left: 180px; top: 100px; z-index: 10; transition: all .6s ease-in-out; overflow: hidden; }
 
-#header #logo:after { height: 100%; width: 60px; transform: skew(-30deg); position: absolute; left: -30px; bottom: 0; transform-origin: left bottom; background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%); animation: aniLogo 18s ease-in-out infinite; }
+#header #logo:after { height: 100%; width: 60px; transform: skew(-30deg); position: absolute; left: -30px; bottom: 0; transform-origin: left bottom; background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%); animation: aniLogo 18s ease-in-out infinite; }
 
 @keyframes aniLogo { 0% { left: -80px; }
   40% { left: -80px; }
@@ -70,7 +70,7 @@ body.pc { min-height: 640px; }
 
 .pc #header .btn-nav.on:hover span { opacity: 1; }
 
-#header #nav { width: 100%; height: 100vh; min-height: 640px; background: linear-gradient(to right, #fff 30%, transparent); position: fixed; left: -100%; top: 0; transition: all .6s ease-in-out; overflow: hidden; opacity: 0; }
+#header #nav { width: 100%; height: 100vh; min-height: 640px; background: linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0)); position: fixed; left: -100%; top: 0; transition: all .6s ease-in-out; overflow: hidden; opacity: 0; }
 
 .pc #header #nav { min-height: 640px; }
 
@@ -328,7 +328,7 @@ body.pc { min-height: 640px; }
 
 .white-mode #homeSwiper .splide .splide__autoplay { opacity: 0; transition-delay: .6s; }
 
-.white-mode #header #nav { background: linear-gradient(to right, #000 20%, transparent); transition-delay: .6s; }
+.white-mode #header #nav { background: linear-gradient(to right, #000 20%, rgba(0, 0, 0, 0) 100%); transition-delay: .6s; }
 
 .white-mode #header #nav .nav-link { color: #fff; transition-delay: .6s; }
 
@@ -436,9 +436,9 @@ body.pc { min-height: 640px; }
 
 .about.contents .about-art3 .process [class*=step] + [class*=step] { margin-left: 6%; }
 
-.works-list-sec:before { position: fixed; width: 100%; height: 210px; background: linear-gradient(to bottom, white 65%, transparent 100%); left: 0; top: 0; z-index: 3; }
+.works-list-sec:before { position: fixed; width: 100%; height: 210px; background: linear-gradient(to bottom, white 65%, rgba(255, 255, 255, 0) 100%); left: 0; top: 0; z-index: 3; }
 
-.works-list-sec:after { position: fixed; width: 100%; height: 180px; background: linear-gradient(to top, white 70%, transparent 100%); left: 0; bottom: 0; z-index: 3; }
+.works-list-sec:after { position: fixed; width: 100%; height: 180px; background: linear-gradient(to top, white 70%, rgba(255, 255, 255, 0) 100%); left: 0; bottom: 0; z-index: 3; }
 
 .works-list-sec .masonry { margin: 0 auto; transition: all .4s ease-in-out; }
 
