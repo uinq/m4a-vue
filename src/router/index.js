@@ -3,11 +3,11 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import Works from '../views/Works.vue'
-import WorksDetail1 from '../views/WorksDetail1.vue'
-import WorksDetail2 from '../views/WorksDetail2.vue'
-import WorksDetail3 from '../views/WorksDetail3.vue'
-import WorksDetail4 from '../views/WorksDetail4.vue'
-import WorksDetail5 from '../views/WorksDetail5.vue'
+import WorksDetail1 from '../views/works/WorksDetail1.vue'
+import WorksDetail2 from '../views/works/WorksDetail2.vue'
+import WorksDetail3 from '../views/works/WorksDetail3.vue'
+import WorksDetail4 from '../views/works/WorksDetail4.vue'
+import WorksDetail5 from '../views/works/WorksDetail5.vue'
 
 const routes = [
   {
