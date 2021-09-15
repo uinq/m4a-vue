@@ -111,7 +111,7 @@ body.pc{min-height:$pc-max-height;}
     }
   }
 }
-
+.home-art3{position: absolute;left: 0;top: 0;width: 100vw;height: 100vh;}
 #homeSwiper .splide{ height:100%;
   .splide__slider{position:relative;height:100%;
     .splide__arrows{
@@ -207,7 +207,7 @@ body.pc{min-height:$pc-max-height;}
 
 .contact.contents{
   .contact-art-wrap{position:absolute;top:200px;bottom:200px;left:180px;right:180px;display:flex;flex-flow: row-reverse;transition:all .6s ease-in-out}
-  .contact-art1{position:relative;
+  .contact-art1{position:relative;min-height:350px;
      h1{font-size:4.0rem;line-height:1.2;font-weight:bold;transition:all .6s ease-in-out}
      .eng{margin-top:20px;font-size:1.4rem;font-weight:bold;transition:all .2s ease-in-out}
      .info{font-size:1.4rem;margin-top:45px;}
@@ -218,7 +218,7 @@ body.pc{min-height:$pc-max-height;}
       &:after{height:1px;width:100%;background:#000;position:absolute;bottom:0;left:0}
      }
   }
-  .contact-art2{flex:1;padding-right:40px;
+  .contact-art2{flex:1;padding-right:40px;min-height:350px;
     .m4a-map{height:100%;width:100%;background:url(http://www.m4a.co.kr/m4a_2019/images/sub/m4a_map.jpg) center center no-repeat;background-size:cover}
   }
 }

@@ -1,26 +1,74 @@
 @charset "UTF-8";
-@font-face { font-family: Roboto; font-weight: 100; src: local(※), url(/fonts/Roboto-Regular.woff) format("woff"); }
-
-@font-face { font-family: Roboto; font-weight: 400; src: local(※), url(/fonts/Roboto-Medium.woff) format("woff"); }
-
-@font-face { font-family: Roboto; font-weight: 700; src: local(※), url(/fonts/Roboto-Bold.woff) format("woff"); }
-
-@font-face { font-family: 'NanumSquareRound'; font-weight: 100; src: url(/fonts/NanumSquareRoundL.woff2) format("woff2"), url(/fonts/NanumSquareRoundL.woff) format("woff"); }
-
-@font-face { font-family: 'NanumSquareRound'; font-weight: 400; src: url(/fonts/NanumSquareRoundR.woff2) format("woff2"), url(/fonts/NanumSquareRoundR.woff) format("woff"); }
-
-@font-face { font-family: 'NanumSquareRound'; font-weight: 700; src: url(/fonts/NanumSquareRoundB.woff2) format("woff2"), url(/fonts/NanumSquareRoundB.woff) format("woff"); }
-
-@font-face { font-family: 'NanumSquareRound'; font-weight: 900; src: url(/fonts/NanumSquareRoundEB.woff2) format("woff2"), url(/fonts/NanumSquareRoundEB.woff) format("woff"); }
-
-@font-face { font-family: 'NanumSquare'; font-weight: 100; src: url(/fonts/NanumSquareL.woff) format("woff"); }
-
-@font-face { font-family: 'NanumSquare'; font-weight: 400; src: url(/fonts/NanumSquareR.woff) format("woff"); }
-
-@font-face { font-family: 'NanumSquare'; font-weight: 700; src: url(/fonts/NanumSquareB.woff) format("woff"); }
-
-@font-face { font-family: 'NanumSquareR'; font-weight: 900; src: url(/fonts/NanumSquareEB.woff) format("woff"); }
-
+@import url("https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css");
+/*
+@font-face {
+font-family:Roboto;
+font-weight:100;
+src:local(※), url(/fonts/Roboto-Regular.woff) format('woff');
+}
+@font-face {
+font-family:Roboto;
+font-weight:400;
+src:local(※), url(/fonts/Roboto-Medium.woff) format('woff');
+}
+@font-face {
+font-family:Roboto;
+font-weight:700;
+src:local(※), url(/fonts/Roboto-Bold.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquareRound';
+font-weight:100;
+src:
+        url(/fonts/NanumSquareRoundL.woff2) format('woff2'),
+        url(/fonts/NanumSquareRoundL.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquareRound';
+font-weight:400;
+src:
+        url(/fonts/NanumSquareRoundR.woff2) format('woff2'),
+        url(/fonts/NanumSquareRoundR.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquareRound';
+font-weight:700;
+src:
+        url(/fonts/NanumSquareRoundB.woff2) format('woff2'),
+        url(/fonts/NanumSquareRoundB.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquareRound';
+font-weight:900;
+src:
+        url(/fonts/NanumSquareRoundEB.woff2) format('woff2'),
+        url(/fonts/NanumSquareRoundEB.woff) format('woff');
+}
+/*
+@font-face {
+font-family: 'NanumSquare';
+font-weight:100;
+src:
+        url(/fonts/NanumSquareL.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquare';
+font-weight:400;
+src:
+        url(/fonts/NanumSquareR.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquare';
+font-weight:700;
+src:
+        url(/fonts/NanumSquareB.woff) format('woff');
+}
+@font-face {
+font-family: 'NanumSquareR';
+font-weight:900;
+src:
+        url(/fonts/NanumSquareEB.woff) format('woff');
+}*/
 #skipNav { position: absolute; top: 0; left: 0; width: 100%; }
 
 #skipNav a { position: relative; display: block; opacity: 0; text-align: center; font-weight: bold; color: #fff; background: rgba(0, 0, 0, 0.6); height: 0; }
@@ -194,6 +242,8 @@ body.pc { min-height: 640px; }
 
 .home-art2 .prj-list > ul > li .btn-all-project:hover { transform: scale(1.1); }
 
+.home-art3 { position: absolute; left: 0; top: 0; width: 100vw; height: 100vh; }
+
 #homeSwiper .splide { height: 100%; }
 
 #homeSwiper .splide .splide__slider { position: relative; height: 100%; }
@@ -344,7 +394,7 @@ body.pc { min-height: 640px; }
 
 .contact.contents .contact-art-wrap { position: absolute; top: 200px; bottom: 200px; left: 180px; right: 180px; display: flex; flex-flow: row-reverse; transition: all .6s ease-in-out; }
 
-.contact.contents .contact-art1 { position: relative; }
+.contact.contents .contact-art1 { position: relative; min-height: 350px; }
 
 .contact.contents .contact-art1 h1 { font-size: 4.0rem; line-height: 1.2; font-weight: bold; transition: all .6s ease-in-out; }
 
@@ -362,7 +412,7 @@ body.pc { min-height: 640px; }
 
 .contact.contents .contact-art1 .btn-brochure:after { height: 1px; width: 100%; background: #000; position: absolute; bottom: 0; left: 0; }
 
-.contact.contents .contact-art2 { flex: 1; padding-right: 40px; }
+.contact.contents .contact-art2 { flex: 1; padding-right: 40px; min-height: 350px; }
 
 .contact.contents .contact-art2 .m4a-map { height: 100%; width: 100%; background: url(http://www.m4a.co.kr/m4a_2019/images/sub/m4a_map.jpg) center center no-repeat; background-size: cover; }
 
@@ -879,7 +929,7 @@ body.pc { min-height: 640px; }
   .home-art2 .prj-list ul > li .btn-all-project:before { height: 10px; right: 0; transform-origin: right bottom; }
   .home-art2 .prj-list ul > li .txt1 { font-size: 1.1rem; font-weight: normal; }
   .home-art2 .prj-list ul > li .txt2 { font-size: 1.6rem; }
-  .home-art3 { width: 100%; }
+  .home-art3 { width: 100%; position: static; }
   .home.contents .home-art3 { height: auto; background: #000; }
   #homeSwiper .splide .splide__arrows { display: none; }
   #homeSwiper .splide .info { transform: translate(0, -50%); left: 0; margin-top: 0; }
@@ -910,13 +960,13 @@ body.pc { min-height: 640px; }
   #homeSwiper .splide .splide__slider .splide__track .splide__list .splide__slide.prj-item6 { background-image: url(http://www.m4a.co.kr/m_2019/img/main/img_prj_banner5.jpg); }
   .contact.contents { padding: 70px 20px 40px; }
   .contact.contents .contact-art-wrap { position: relative; flex-direction: column; top: 0; left: 0; bottom: 0; right: 0; padding: 20px 0px 35px; box-sizing: border-box; height: calc(100vh - 130px); transition: all .0s ease-in-out; }
-  .contact.contents .contact-art1 { width: auto; padding-bottom: 30px; position: static; }
+  .contact.contents .contact-art1 { width: auto; padding-bottom: 30px; position: static; min-height: 0; }
   .contact.contents .contact-art1 h1 { font-size: 2.7rem; transition: all .0s ease-in-out; }
   .contact.contents .contact-art1 .eng { font-size: 1.2rem; margin-top: 20px; }
   .contact.contents .contact-art1 .info { margin-top: 25px; font-size: 1.2rem; }
   .contact.contents .contact-art1 .btn-brochure { width: 140px; bottom: 10px; font-size: 1.1rem; letter-spacing: 0; }
   .contact.contents .contact-art1 .btn-brochure:before { height: 10px; }
-  .contact.contents .contact-art2 { padding-right: 0; padding-bottom: 30px; }
+  .contact.contents .contact-art2 { padding-right: 0; padding-bottom: 30px; min-height: 0; }
   .about.contents .home-view-more { bottom: 10vh; }
   .about.contents .art-tpl { padding: 60px 20px 0px; }
   .about.contents .about-art1 { background: url(http://www.m4a.co.kr/m_2019/img/sub/bg_about_01.png) center top no-repeat; background-size: cover; }
