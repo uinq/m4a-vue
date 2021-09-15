@@ -36,7 +36,7 @@ export default {
     }
   },
   mounted () {
-    // this.checkHomePopLS()
+    this.checkHomePopLS()
   },
   methods: {
     closePop () {
