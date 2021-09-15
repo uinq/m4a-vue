@@ -740,7 +740,7 @@ body.pc { min-height: 640px; }
 
 .works.contents .detail1 .works-art1 .img-sec.prj5 { background: #86c url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail04.png) center top no-repeat; background-size: cover; }
 
-.home-layer { position: fixed; top: 164px; left: 101px; z-index: 10; width: 400px; height: 523px; box-sizing: border-box; box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3); background: #fff; transition: all .4s ease-in-out; display: none; }
+.home-layer { position: fixed; top: 164px; left: 101px; z-index: 30; width: 400px; height: 523px; box-sizing: border-box; box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3); background: #fff; transition: all .4s ease-in-out; display: none; }
 
 .home-layer .pop-conts { padding: 35px; }
 
@@ -764,7 +764,7 @@ body.pc { min-height: 640px; }
 
 .home-layer .pop-conts ul.p-txt1:after { display: none; }
 
-.home-layer .pop-conts .p-txt1:before { position: absolute; width: 3px; height: 3px; background: #999; left: 0; top: 0; border-radius: 100%; left: 2px; top: 11px; }
+.home-layer .pop-conts ul.p-txt1 > li:before, .home-layer .pop-conts .p-txt1:before { position: absolute; width: 3px; height: 3px; background: #999; left: 0; top: 0; border-radius: 100%; left: 2px; top: 11px; }
 
 .home-layer .pop-conts .p-tit1 + .p-txt1 { margin-top: 5px; }
 

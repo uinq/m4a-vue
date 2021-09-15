@@ -460,7 +460,7 @@ body.pc{min-height:$pc-max-height;}
   .detail1 .works-art1 .img-sec.prj5{background:#86c url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail04.png) center top no-repeat;background-size:cover;}
 }
 
-.home-layer{position:fixed;top:164px;left:101px;z-index:10;width:400px;height:523px;box-sizing:border-box;box-shadow:2px 2px 30px rgba(0,0,0,0.3);background:#fff;transition:all .4s ease-in-out;display:none;
+.home-layer{position:fixed;top:164px;left:101px;z-index:30;width:400px;height:523px;box-sizing:border-box;box-shadow:2px 2px 30px rgba(0,0,0,0.3);background:#fff;transition:all .4s ease-in-out;display:none;
   .pop-conts{padding:35px;}
   .pop-conts .pop-head{padding:13px 6px 22px;border-bottom:1px solid #d1d1d1;margin-bottom:11px}
   .pop-conts .pop-head .tit{font-size:3.0rem}
@@ -473,6 +473,7 @@ body.pc{min-height:$pc-max-height;}
   .pop-conts .p-tit1 > span{position:relative;display:inline-block;}
   .pop-conts .p-tit1 > span:before{width:calc(100% + 4px);height:13px;background:#caf5f1;position:absolute;bottom:2px;left:-2px;z-index:-1;}
   .pop-conts ul.p-txt1:after{display:none;}
+  .pop-conts ul.p-txt1 > li:before,
   .pop-conts .p-txt1:before{position:absolute;width:3px;height:3px;background:#999;left:0;top:0;border-radius:100%;left:2px;top:11px;}
   .pop-conts .p-tit1 + .p-txt1{margin-top:5px;}
   .pop-conts .p-txt1 + .p-tit1{margin-top:20px}
