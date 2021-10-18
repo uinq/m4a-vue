@@ -11,7 +11,7 @@
           "name" : "MyAUTO",
           "date" : "2018 F/W",
           "kind" : "PC WEB / MOBILE WEB / HYBRID APP.",
-          "img" : "/imagesimg_work_list01.png",
+          "img" : "/images/img_work_list01.png",
           "url" : "/worksDetail1"
         },
         {
@@ -22,7 +22,7 @@
           "name" : "HANA MEMBERS APP",
           "date" : "2018 S/S",
           "kind" : "MOBILE APP.",
-          "img" : "/imagesimg_work_list02.png",
+          "img" : "/images/img_work_list02.png",
           "url" : "/worksDetail2"
         },
         {
@@ -47,7 +47,7 @@
           "name" : "SELF BANK APP",
           "date" : "2017 F/W",
           "kind" : "MOBILE APP.",
-          "img" : "/imagesimg_work_list04.png",
+          "img" : "/images/img_work_list04.png",
           "url" : "/worksDetail4"
         },
         {
@@ -63,7 +63,7 @@
           "name" : "ShinhanCard MOBIL",
           "date" : "2017 S/S",
           "kind" : "MOBILE WEB / MOBILE APP.",
-          "img" : "/imagesimg_work_list06.png",
+          "img" : "/images/img_work_list06.png",
           "url" : "/worksDetail5"
         },
         {
@@ -93,7 +93,7 @@
           "name" : "DIGITAL COUNTER",
           "date" : "2018 S/S",
           "kind" : "MOBILITY PLATFORM",
-          "img" : "/imagesimg_work_list03.png"
+          "img" : "/images/img_work_list03.png"
         },
         {
           "cls" : "n12",
@@ -110,7 +110,7 @@
           "name" : "SAMSUNG SMART Home",
           "date" : "2017 F/W",
           "kind" : "WEB / MOBILE WEB",
-          "img" : "/imagesimg_work_list05.png"
+          "img" : "/images/img_work_list05.png"
         },
         {
           "cls" : "n14",
@@ -127,7 +127,7 @@
           "name" : "LOTTE ONLINE DUTYFREE",
           "date" : "2014 F/W",
           "kind" : "WEB / MOBILE WEB / MOBILE APP",
-          "img" : "/imagesimg_work_list07.png"
+          "img" : "/images/img_work_list07.png"
         },
         {
           "cls" : "n16",
