@@ -1,74 +1,27 @@
 @charset "UTF-8";
-@import url("https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css");
-/*
-@font-face {
-font-family:Roboto;
-font-weight:100;
-src:local(※), url(/fonts/Roboto-Regular.woff) format('woff');
-}
-@font-face {
-font-family:Roboto;
-font-weight:400;
-src:local(※), url(/fonts/Roboto-Medium.woff) format('woff');
-}
-@font-face {
-font-family:Roboto;
-font-weight:700;
-src:local(※), url(/fonts/Roboto-Bold.woff) format('woff');
-}
-@font-face {
-font-family: 'NanumSquareRound';
-font-weight:100;
-src:
-        url(/fonts/NanumSquareRoundL.woff2) format('woff2'),
-        url(/fonts/NanumSquareRoundL.woff) format('woff');
-}
-@font-face {
-font-family: 'NanumSquareRound';
-font-weight:400;
-src:
-        url(/fonts/NanumSquareRoundR.woff2) format('woff2'),
-        url(/fonts/NanumSquareRoundR.woff) format('woff');
-}
-@font-face {
-font-family: 'NanumSquareRound';
-font-weight:700;
-src:
-        url(/fonts/NanumSquareRoundB.woff2) format('woff2'),
-        url(/fonts/NanumSquareRoundB.woff) format('woff');
-}
-@font-face {
-font-family: 'NanumSquareRound';
-font-weight:900;
-src:
-        url(/fonts/NanumSquareRoundEB.woff2) format('woff2'),
-        url(/fonts/NanumSquareRoundEB.woff) format('woff');
-}
-/*
-@font-face {
-font-family: 'NanumSquare';
-font-weight:100;
-src:
-        url(/fonts/NanumSquareL.woff) format('woff');
-}
-@font-face {
-font-family: 'NanumSquare';
-font-weight:400;
-src:
-        url(/fonts/NanumSquareR.woff) format('woff');
-}
-@font-face {
-font-family: 'NanumSquare';
-font-weight:700;
-src:
-        url(/fonts/NanumSquareB.woff) format('woff');
-}
-@font-face {
-font-family: 'NanumSquareR';
-font-weight:900;
-src:
-        url(/fonts/NanumSquareEB.woff) format('woff');
-}*/
+/*@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');*/
+@font-face { font-family: Roboto; font-weight: 100; src: local(※), url(/fonts/Roboto-Regular.woff) format("woff"); }
+
+@font-face { font-family: Roboto; font-weight: 400; src: local(※), url(/fonts/Roboto-Medium.woff) format("woff"); }
+
+@font-face { font-family: Roboto; font-weight: 700; src: local(※), url(/fonts/Roboto-Bold.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquareRound'; font-weight: 100; src: url(/fonts/NanumSquareRoundL.woff2) format("woff2"), url(/fonts/NanumSquareRoundL.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquareRound'; font-weight: 400; src: url(/fonts/NanumSquareRoundR.woff2) format("woff2"), url(/fonts/NanumSquareRoundR.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquareRound'; font-weight: 700; src: url(/fonts/NanumSquareRoundB.woff2) format("woff2"), url(/fonts/NanumSquareRoundB.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquareRound'; font-weight: 900; src: url(/fonts/NanumSquareRoundEB.woff2) format("woff2"), url(/fonts/NanumSquareRoundEB.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquare'; font-weight: 100; src: url(/fonts/NanumSquareL.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquare'; font-weight: 400; src: url(/fonts/NanumSquareR.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquare'; font-weight: 700; src: url(/fonts/NanumSquareB.woff) format("woff"); }
+
+@font-face { font-family: 'NanumSquareR'; font-weight: 900; src: url(/fonts/NanumSquareEB.woff) format("woff"); }
+
 #skipNav { position: absolute; top: 0; left: 0; width: 100%; }
 
 #skipNav a { position: relative; display: block; opacity: 0; text-align: center; font-weight: bold; color: #fff; background: rgba(0, 0, 0, 0.6); height: 0; }
