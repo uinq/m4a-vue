@@ -128,15 +128,15 @@ body.pc{min-height:$pc-max-height;}
     }
     .splide__track{height:100%;
       .splide__list{height:100%;
-        .splide__slide{position:absolute;left:0;top:0;opacity:0;width:100%;height:100%;background:url(http://www.m4a.co.kr/m4a_2019/images/common/logo_m4a.png) center center no-repeat;background-size:cover;transition: opacity .8s ease-in-out !important;pointer-events: none;z-index:0;}
+        .splide__slide{position:absolute;left:0;top:0;opacity:0;width:100%;height:100%;background:url($base-url+'/logo_m4a.png') center center no-repeat;background-size:cover;transition: opacity .8s ease-in-out !important;pointer-events: none;z-index:0;}
         .splide__slide.is-active{transition: opacity 1s ease-out !important;z-index:5;pointer-events:auto;}
         .splide__slide.is-active{opacity:1;}
-        .splide__slide.prj-item1{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj01/pic_project.jpg)}
-        .splide__slide.prj-item2{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj02/pic_project.jpg)}
-        .splide__slide.prj-item3{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj03/pic_project.jpg)}
-        .splide__slide.prj-item4{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj04/pic_project.jpg)}
-        .splide__slide.prj-item5{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj05/pic_project.jpg)}
-        .splide__slide.prj-item6{background-image:url(http://www.m4a.co.kr/m4a_2019/images/prj/prj06/pic_project.jpg)}
+        .splide__slide.prj-item1{background-image:url($base-url+'/pic_project1.jpg')}
+        .splide__slide.prj-item2{background-image:url($base-url+'/pic_project2.jpg')}
+        .splide__slide.prj-item3{background-image:url($base-url+'/pic_project3.jpg')}
+        .splide__slide.prj-item4{background-image:url($base-url+'/pic_project4.jpg')}
+        .splide__slide.prj-item5{background-image:url($base-url+'/pic_project5.jpg')}
+        .splide__slide.prj-item6{background-image:url($base-url+'/pic_project6.jpg')}
         .splide__slide:before{content:'';width:100%;height:100%;position:absolute;left:0;top:0;background:#fff;opacity:0.6}
       }
     }
@@ -219,7 +219,7 @@ body.pc{min-height:$pc-max-height;}
      }
   }
   .contact-art2{flex:1;padding-right:40px;min-height:350px;
-    .m4a-map{height:100%;width:100%;background:url(http://www.m4a.co.kr/m4a_2019/images/sub/m4a_map.jpg) center center no-repeat;background-size:cover}
+    .m4a-map{height:100%;width:100%;background:url($base-url+'/m4a_map.jpg') center center no-repeat;background-size:cover}
   }
 }
 
@@ -231,8 +231,8 @@ body.pc{min-height:$pc-max-height;}
   .about-art3{height:100vh;min-height:$pc-max-height;position:relative;
   }
 
-  .about-art1{background:url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_about01.jpg) center center no-repeat;background-size:cover;
-    &:after{position:absolute;left:0px;top:0;width:100%;height:100%;background:url(http://www.m4a.co.kr/m4a_2019/images/sub/bgimg_about_m4a.png) center center no-repeat;background-size:cover;animation: aboutM4a1 3s infinite;}
+  .about-art1{background:url($base-url+'/bg_about01.jpg') center center no-repeat;background-size:cover;
+    &:after{position:absolute;left:0px;top:0;width:100%;height:100%;background:url($base-url+'/bgimg_about_m4a.png') center center no-repeat;background-size:cover;animation: aboutM4a1 3s infinite;}
     &:before{position:absolute;left:0px;top:0;width:100%;height:100%;background:#fff;opacity:0.8;}
     .subject{position:absolute;z-index:1;width:100%;left:0;top:50%;text-align:center;margin-top:160px;transition:all .4s ease-in-out;
       .tit{font-size:4.8rem;font-weight:900;transition:all .4s ease-in-out;}
@@ -251,7 +251,7 @@ body.pc{min-height:$pc-max-height;}
       transform:translateY(20px);
     }
   }
-  .about-art2{background:url(	http://www.m4a.co.kr/m4a_2019/images/sub/bg_about03.jpg) center 0 no-repeat;background-size:cover;
+  .about-art2{background:url(	$base-url+'/bg_about03.jpg') center 0 no-repeat;background-size:cover;
     &:before{position:absolute;left:0;top:0;width:100%;height:100%;background:#fff;opacity:0.8;}
     .subject{position:relative;z-index:1;margin-top:30px;
       .tit{font-size:6.0rem;font-weight:900;line-height:1.1;transition:all .4s ease-in-out;}
@@ -266,7 +266,7 @@ body.pc{min-height:$pc-max-height;}
       .sub-txt{margin-top:24px;font-weight:bold;font-size:1.6rem;}
     }
   }
-  .about-art3{background:url(	http://www.m4a.co.kr/m4a_2019/images/sub/bg_about04.jpg) center 0 no-repeat;background-size:cover;
+  .about-art3{background:url($base-url+'/bg_about04.jpg') center 0 no-repeat;background-size:cover;
     &:before{position:absolute;left:0;top:0;width:100%;height:100%;background:#fff;opacity:0.8;}
     .subject{position:relative;z-index:1;text-align:center;margin-top:30px;
       .tit{font-size:6.0rem;font-weight:900;line-height:1.1;}
@@ -331,7 +331,7 @@ body.pc{min-height:$pc-max-height;}
       .tit{font-size:1.4rem;font-weight:900;color:#2375ca;position:absolute;left:0;top:-25px;}
       .tit1{font-size:4.0rem;font-weight:bold;width:270px;line-height:1.3;padding-top:35px;}
       .paging{position:relative;font-size:1.6rem;margin-top:30px;
-      &:after{width: 30px; height: 100px;position:absolute;left:2px;top:70px;background: url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_scroll.png) no-repeat}
+      &:after{width: 30px; height: 100px;position:absolute;left:2px;top:70px;background:url($base-url+'/bg_work_scroll.png') no-repeat}
         > span:first-child{font-weight:900;}
         > span:nth-child(2){margin:0px 10px;}
       }
@@ -348,8 +348,8 @@ body.pc{min-height:$pc-max-height;}
     a{display:inline-block;vertical-align:middle;transition:all .2s ease-in-out;}
     a:hover{transform:scale(1.2);}
     .app-group{flex:1;font-size:1.6rem;transition:all .4s ease-in-out;
-      .app1{padding-left: 21px;background: url(http://www.m4a.co.kr/m4a_2019/images/sub/logo_app_store.png) no-repeat 0 4px;}
-      .app2{padding-left: 22px;background: url(http://www.m4a.co.kr/m4a_2019/images/sub/logo_google_play.png) no-repeat 0 4px;}
+      .app1{padding-left: 21px;background: url($base-url+'/logo_app_store.png') no-repeat 0 4px;}
+      .app2{padding-left: 22px;background: url($base-url+'/logo_google_play.png') no-repeat 0 4px;}
       .col{width:1px;height:10px;color:transparent;overflow:hidden;position:relative;top:0px;margin:0px 40px;background:#000;line-height:0;display:inline-block;transition:all .4s ease-in-out;}
     }
     .ctrl-group{flex:1;text-align:right;font-size:1.4rem;
@@ -361,7 +361,7 @@ body.pc{min-height:$pc-max-height;}
         &:before{width:10px;height:10px;transform-origin:right bottom;border-right:1px solid #000;transform:skew(35deg);position:absolute;right:0;bottom:0;}
         &:after{width:100%;height:1px;background:#000;position:absolute;right:0;bottom:0;}
       }
-      .list{display:inline-block;overflow:hidden;width:18px;height:18px;background:url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_list02.png) center center no-repeat;color:transparent;margin:0 80px;}
+      .list{display:inline-block;overflow:hidden;width:18px;height:18px;background:url($base-url+'/bg_list02.png') center center no-repeat;color:transparent;margin:0 80px;}
     }
   }
   .works-art1{
@@ -420,9 +420,9 @@ body.pc{min-height:$pc-max-height;}
   .splide-line{position:absolute;;top:-1px;left:0;width:0%;height:2px;background:#f37163;z-index:5;transition:all .4s ease-in-out}
 
   .detail1{
-    .works-art1 .img-sec{background:#2571cb url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail01.png) center -50px no-repeat;background-size:cover;}
+    .works-art1 .img-sec{background:#2571cb url($base-url+'/bg_work_detail01.png') center -50px no-repeat;background-size:cover;}
     .splide2-wrap{position:absolute;left:-94px;top:36px;width:225px;padding:14px;z-index:2;box-shadow: 3px 10px 100px #b8c5db;border-radius:28px;}
-    .splide2-wrap:after{position: absolute; left:0;top:0;width:100%;height: 515px;background: url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_device_mobile.png) no-repeat 0 0;z-index: 2;}
+    .splide2-wrap:after{position: absolute; left:0;top:0;width:100%;height: 515px;background: url($base-url+'/bg_device_mobile.png') no-repeat 0 0;z-index: 2;}
     .splide2-wrap .splide{border-radius:15px;overflow:hidden;}
     #splide2{height:auto;position:relative;z-index:4;}
     #splide2 .splide__arrows,
@@ -431,7 +431,7 @@ body.pc{min-height:$pc-max-height;}
     #splide3 .splide__pagination{display:none;}
     .works-art4 .s-txt{left: 388px;top: -30px;}
     .splide3-wrap{width: 880px;position:absolute;top:-34px;left:196px;padding:23px  24px;box-shadow: 3px 10px 100px #b8c5db;border-radius:32px;}
-    .splide3-wrap:after{position: absolute;left:0;top:0;width: 100%;height: 586px;background: url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_device_pc.png) no-repeat 0 0;background-size:100% auto;}
+    .splide3-wrap:after{position: absolute;left:0;top:0;width: 100%;height: 586px;background: url($base-url+'/bg_device_pc.png') no-repeat 0 0;background-size:100% auto;}
     .splide3-wrap .txt{position:absolute;}
     #splide3{position:relative;z-index:3;width:100%;overflow:hidden;}
   }
@@ -450,14 +450,14 @@ body.pc{min-height:$pc-max-height;}
     .works-art4.type2 .splide4-wrap{width:240px;padding:14px;position:relative;}
     .works-art4.type2 .raoud-overflow {position:absolute;left:0;top:0;width:calc(100vw - 300px);border-radius:44px;overflow:hidden;margin-left:-100px;}
     .works-art4.type2 .splide4-wrap .splide__track{overflow:visible;}
-    .works-art4.type2 .splide4-wrap .splide__track:before{background:url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_device_mobile02.png) 0 0 no-repeat;background-size:100% auto;width:100%;height:100%;position:absolute;left:-15px;top:-14px;padding:14px;z-index:2;}
+    .works-art4.type2 .splide4-wrap .splide__track:before{background:url($base-url+'/bg_device_mobile02.png') 0 0 no-repeat;background-size:100% auto;width:100%;height:100%;position:absolute;left:-15px;top:-14px;padding:14px;z-index:2;}
     .works-art4.type2 .splide4-wrap .splide__slide{margin-right:70px;}
 
   }
-  .detail1 .works-art1 .img-sec.prj2{background:#f0f1f6 url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail02.png) center bottom no-repeat;background-size:cover;}
-  .detail1 .works-art1 .img-sec.prj3{background:#755de9 url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail05.png) center bottom no-repeat;background-size:cover;}
-  .detail1 .works-art1 .img-sec.prj4{background:#86c url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail03.png) center top no-repeat;background-size:cover;}
-  .detail1 .works-art1 .img-sec.prj5{background:#86c url(http://www.m4a.co.kr/m4a_2019/images/sub/bg_work_detail04.png) center top no-repeat;background-size:cover;}
+  .detail1 .works-art1 .img-sec.prj2{background:#f0f1f6 url($base-url+'/bg_work_detail02.png') center bottom no-repeat;background-size:cover;}
+  .detail1 .works-art1 .img-sec.prj3{background:#755de9 url($base-url+'/bg_work_detail05.png') center bottom no-repeat;background-size:cover;}
+  .detail1 .works-art1 .img-sec.prj4{background:#86c url($base-url+'/bg_work_detail03.png') center top no-repeat;background-size:cover;}
+  .detail1 .works-art1 .img-sec.prj5{background:#86c url($base-url+'/bg_work_detail04.png') center top no-repeat;background-size:cover;}
 }
 
 .home-layer{position:fixed;top:164px;left:101px;z-index:30;width:400px;height:523px;box-sizing:border-box;box-shadow:2px 2px 30px rgba(0,0,0,0.3);background:#fff;transition:all .4s ease-in-out;display:none;
